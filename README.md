@@ -1,1 +1,1 @@
-# kinesiol-1e03
+# KINESIOL 1E03 - Motor Control and Learning
