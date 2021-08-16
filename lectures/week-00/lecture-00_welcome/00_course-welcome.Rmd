@@ -1,0 +1,224 @@
+---
+title: "Welcome to KINESIOL 1E03"
+subtitle: "KINESIOL 1E03 - Motor control and learning"
+author: "Mike Carter"
+date: "Fall 2021 Week 0 </br> Lecture 0"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["mackin", "mackin-fonts"]
+    nature:
+      beforeInit: ["../../../js/mackin-xaringan.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    includes:
+      in_header: "../../../libs/partials/header.html"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r libraries, echo=FALSE}
+library(tidyverse)
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("freezeframe", "tachyons"))
+```
+
+class: title-slide-section-gold, center, middle
+
+# this course is about...
+
+### how do we *control* motor skills?
+
+### how do we *acquire* motor skills?
+
+---
+
+## What is motor control?
+
+- the study of the **neural, behavioural, environmental, and synergistic** mechanisms responsible for human **movement and stability (posture)**
+
+<ins>Example research questions studied by motor control scientists</ins>:
+
+1. How do our many different systems collectively organize to accomplish a task?
+
+2. How are reflexes involved in the control of movement?
+
+3. How do people maintain their balance when spinning around?
+
+4. How do humans match perceptual information to appropriate motor commands?
+
+5. How and why does alcohol or marijuana affect movement control?
+
+6. Why do most people find it difficult to pat their hand while rubbing their stomach?
+
+---
+
+## What is motor learning?
+
+- the study of the **processes** involved in acquiring motor skills and of the **variables** that **promote *or* inhibit** such acquisition
+
+<ins>Example research questions studied by motor learning scientists</ins>:
+
+1. Are there recognizable stages in the process of skill learning?
+
+2. How frequently should learners be provided with corrective feedback?
+
+3. Is the use of mirrors in teaching skills such as dance effective for learning?
+
+4. Should instructors demonstrate only how to perform skills correctly?
+
+5. How can a therapist or coach estimate a client's potential for (re)learning a skill?
+
+6. Should a performer focus attention on his or her bodily movement?
+
+---
+
+class: title-slide-section-gold, center, middle
+
+## Meet the Fall 2021 KINESIOL 1E03 team
+
+---
+
+## Your teaching assistants
+
+
+---
+
+.left-column[
+![](imgs/mike.png)
+
+![](https://www.researchgate.net/publication/334037637/figure/fig2/AS:774053061201920@1561560039278/Three-dimensional-animated-representation-of-the-KINARM-endpoint-robotic-set-up-used-at-3_Q640.jpg)
+]
+
+.right-column[
+## Mike Carter, Ph.D 
+
+![:scale 90%](imgs/training.png)
+___
+
+.black[Memory, Action, & Cognition Lab]
+- Human-robot and human-human interactions
+- The role of feedback characteristics in motor learning
+- Metascience and motor learning
+- Decision-making for multiple skill/task learning
+- Aging, disease, and motor control and learning
+]
+
+---
+
+.left-column[
+![:scale 100%](imgs/brad.jpg)
+
+![](imgs/metascience.png)
+]
+
+.right-column[
+## Brad McKay, Ph.D 
+
+![:scale 90%](imgs/brad-training.png)
+___
+
+.black[Memory, Action, & Cognition Lab]
+- Metascience
+- Motor behaviour
+- Research methods and statistics
+]
+
+---
+
+class: inverse
+
+# So why study motor control and learning?
+
+.footnote[Video: https://www.youtube.com/watch?v=l9U8X6I1vow]
+
+.pull-left[
+- 600 muscles, 200 bones, hundreds of joints
+
+- 1-3 degrees of freedom per joint
+
+- multiple muscles cross joints
+
+- non-linear force generators
+]
+
+.pull-right[
+- mechanical interactions
+
+- imperfect sensors (e.g., vision, proprioception, etc)
+
+- cross modal integration
+
+- our sensors are SLOW! (i.e., out of date)
+]
+
+---
+
+class: inverse, middle, center
+
+## yet, our movements must be...
+
+#### *fast, accurate, smooth*
+
+#### *adaptable/flexible*
+
+#### *relatively "automatic"*
+
+#### *learned*
+
+---
+
+.center[
+![](imgs/first-day-class-meme.png)
+]
+
+---
+
+class: title-slide-section-gold, center, middle
+
+# Course outline
+
+---
+
+class: middle
+
+.pull-left[.center[
+![](https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/794a93b76d7c657c2eb52e229c4b20e583615e06_1600x1200.jpg)
+]]
+
+.pull-right[
+<br><br>
+> .large[Why do we, and other animals, have brains?]
+.tr[
+&mdash;*Daniel M. Wolpert, Ph.D*
+]
+
+<br>
+
+.center[Watch this video to find out: https://youtu.be/_DdU4ehCzUM]
+]
+
+---
+
+class: title-slide-final, middle
+background-image: url(https://raw.githubusercontent.com/cartermaclab/mackin-xaringan/main/imgs/logos/mcmaster-stack-color.png)
+background-size: 95px
+background-position: 9% 15%
+
+# What questions do you have?
+
+<br>
+
+|                                                                                                                |                                   |
+| :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| <a href="mailto:michaelcarter@mcmaster.ca">.mackinred[<i class="fa fa-paper-plane fa-fw"></i>]                         | michaelcarter@mcmaster.ca                 |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
+| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+

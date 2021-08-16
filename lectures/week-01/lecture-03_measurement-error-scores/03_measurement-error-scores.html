@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Measuring performance: Error scores</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mike Carter" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/mackin.css" rel="stylesheet" />
+    <link href="libs/remark-css/mackin-fonts.css" rel="stylesheet" />
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Measuring performance: Error scores
+## KINESIOL 1E03 - Motor control and learning
+### Mike Carter
+### Fall 2021 Week 1 </br> Lecture 3
+
+---
+
+
+
+
+
+
+
+
+
+class: title-slide-section-gold, bottom
+
+# Review from last lecture
+
+---
+
+## .grey[1D] classification systems
+
+.footnote[Magill &amp; Anderson 2017, p. 10]
+
+### Size of primary musculature required
+
+.center[
+![:scale 90%](imgs/1d-musculature.png)
+]
+
+---
+
+## .grey[1D] classification systems
+
+.footnote[Magill &amp; Anderson 2017, p. 10]
+
+### Specificity of where actions begin and end
+
+.center[
+![:scale 90%](imgs/1d-start-end.png)
+]
+
+---
+
+## .grey[1D] classification systems
+
+.footnote[Magill &amp; Anderson 2017, p. 10]
+
+### Stability of the environmental context
+
+.center[
+![:scale 90%](imgs/1d-environment.png)
+]
+
+---
+
+## Gentile's .grey[two-dimensions] taxonomy
+
+.footnote[Magill &amp; Anderson 2017, p. 14]
+
+.center[
+![](imgs/gentile-2d-1.png)
+]
+
+---
+
+## Gentile's .grey[two-dimensions] taxonomy
+
+.footnote[Magill &amp; Anderson 2017, p. 15]
+
+.center[
+![](imgs/gentile-2d-2.png)
+]
+
+---
+
+class: inverse, middle, center
+
+# Any questions?
+
+---
+
+class: inverse
+
+background-image: url(imgs/how-to-measure.png)
+background-size: contain
+
+---
+
+# Learning objectives
+
+1. Describe the differences between and give examples of **performance outcome** and **performance production** measures.
+
+2. Describe and compute **common error score measures** for different types of motor skills.
+
+--
+
+.bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
+.tc[
+.black[&lt;ins&gt;Take-home message&lt;/ins&gt;:
+
+There are many ways we can measure motor performance. Often the appropriate measure depends on the individual, task/skill, and/or environment. Valid conclusions about motor behaviour depend on the use of appropriate measures.
+]]]
+
+---
+
+## We can broadly classify .grey[performance measures] using .grey[2 categories]
+
+.black[PERFORMANCE OUTCOME MEASURES]: measures that indicate the result of an action
+
+  - **may or may not** be relative to some **task goal**
+  
+  - e.g., how fast a person ran 100 m; how far away a missed putt was from the hole
+
+--
+
+&lt;br&gt;
+
+.black[PERFORMANCE PRODUCTION MEASURES]: measure that indicate how the nervous, muscular, and/or skeletal systems function during an action
+
+  - capture the **performance characteristics** that resulted in a given performance outcome
+  
+  - e.g., limb kinematics; feedback-related negativity potential 
+
+---
+
+## Some ways to measure performance
+
+.pull-left[
+.black[Performance outcome measures]
+- Time to complete a task
+- Reaction time
+- Amount of error in performing criterion movement
+- Time on target / Time in balance
+- Trials or repetitions to completion
+- Number or percentage of errors
+- Number of successful attempts
+- etc...
+]
+
+--
+
+.pull-right[
+.black[Performance production measures]
+- Displacement, velocity, and/or acceleration
+- Joint angle and/or joint torque
+- Electromyography
+- Electroencephalogram
+- Functional magnetic resonance imaging
+- Positron emission topography
+- Transcranial magnetic stimulation
+- Functional near-infrared spectroscopy
+- etc...
+]
+
+---
+
+## *Q: Is .grey[Person A] or .grey[Person B] better?*
+
+.center[
+![:scale 80%](imgs/target-outcomes.png)
+]
+
+---
+
+## *Q: Would you rather .grey[coach] Person A or Person B?*
+
+.center[
+![:scale 80%](imgs/target-outcomes.png)
+]
+
+---
+
+background-image: url(https://www.frontiersin.org/files/Articles/115780/fpsyg-05-01325-HTML/image_m/fpsyg-05-01325-g001.jpg)
+background-position: 92% 28%
+background-size: 35%
+
+## Consider the following scenario
+
+A person is tasked with learning to project a slider down  
+a fixed track to a specified goal distance of 100 cm using  
+their non-dominant hand. The person performs 5 trials of  
+this task. On each trial you record the distance the slider  
+traveled from the starting point (a wooden barrier). The  
+result for each trial is shown below:
+
+.center[
+![](imgs/error-score-1.png)
+]
+
+--
+
+.black[*Q1: How should we measure performance on this task?*]  
+.black[*Q2: What type of measure would this be?*]  
+.black[*Q3: How would you classify this task?*]
+
+---
+
+## Constant error measures the .grey[average error] in responding
+
+.center[
+![](imgs/error-score-1.png)
+]
+
+.pull-left[
+We can calculate using:
+
+`\(CE = x_{i} - T\)`
+
+`\(Mean \,CE = \sum(x_{i} - T)/n\)`
+]
+
+--
+
+.pull-right[
+
+```r
+# Calculate CE
+((93 - 100) + (103 - 100) + (99 - 100) + (105 - 100) + (96 - 100)) / 5
+```
+
+```
+## [1] -0.8
+```
+
+Mean CE = -0.8 cm
+
+.black[*How do we interpret this?*]
+]
+
+---
+
+## Consider the following scenario
+
+.pull-left[
+What is the mean CE for this block of trials?
+
+![](imgs/error-score-2.png)
+
+
+```r
+# Calculate CE
+((99 - 100) + (99 - 100) + (100 - 100) + (99 - 100) + (99 - 100)) / 5
+```
+
+```
+## [1] -0.8
+```
+
+Mean CE = -0.8 cm
+]
+
+--
+
+.pull-right[
+Here's the first block of 5 trials again...
+
+![](imgs/error-score-1a.png)
+
+
+```r
+# Calculate CE
+((93 - 100) + (103 - 100) + (99 - 100) + (105 - 100) + (96 - 100)) / 5
+```
+
+```
+## [1] -0.8
+```
+
+Mean CE = -0.8 cm
+]
+
+--
+
+.center[
+### .black[*What do we learn from this?*]
+]
+
+---
+
+## Variable error measures the .grey[inconsistency] in responding
+
+.center[
+![](imgs/error-score-1.png)
+]
+
+.pull-left[
+We can calculate using:
+
+`\(Mean \,VE = \sqrt{\sum(x_{i} - M)^2/n}\)`
+
+
+```r
+# Calculate M for VE
+(93 + 103 + 99 + 105 + 96) / 5
+```
+
+```
+## [1] 99.2
+```
+
+]
+
+--
+
+.pull-right[
+
+```r
+# Calculate VE
+sqrt(((93 - 99.2)^2 + (103 - 99.2)^2 + (99 - 99.2)^2 + (105 - 99.2)^2 + (96 - 99.2)^2) / 5)
+```
+
+```
+## [1] 4.4
+```
+
+Mean VE = 4.4 cm
+
+.black[*How do we interpret this?*]
+]
+
+---
+
+## Let's return to this scenario
+
+.pull-left[
+Second block of 5 trials...
+
+![](imgs/error-score-2.png)
+
+
+```r
+# Calculate VE
+sqrt(((99 - 99.2)^2 + (99 - 99.2)^2 + (100 - 99.2)^2 + (99 - 99.2)^2 + (99 - 99.2)^2) / 5)
+```
+
+```
+## [1] 0.4
+```
+
+Mean VE = 0.4 cm
+]
+
+.pull-right[
+First block of 5 trials...
+
+![](imgs/error-score-1a.png)
+
+
+```r
+# Calculate VE
+sqrt(((93 - 99.2)^2 + (103 - 99.2)^2 + (99 - 99.2)^2 + (105 - 99.2)^2 + (96 - 99.2)^2) / 5)
+```
+
+```
+## [1] 4.4
+```
+
+Mean VE = 4.4 cm
+]
+
+--
+
+.center[
+### .black[*What do we learn from this?*]
+]
+
+---
+
+## What is the .grey[mean CE] for this block of 6 outcomes?
+
+.center[
+![](imgs/error-score-3.png)
+]
+
+.pull-left[.center[
+![](https://i.gifer.com/4yu.gif)
+.tiny[Source: https://i.gifer.com/4yu.gif]
+]]
+
+--
+
+.pull-right[
+
+```r
+# Calculate CE
+((98 - 100) + (99 - 100) + (102 - 100) + (104 - 100) + (96 - 100) + (101 - 100)) / 6
+```
+
+```
+## [1] 0
+```
+Mean CE = 0 cm
+]
+
+---
+
+name: ae
+
+## Absolute error measures .grey[overall accuracy] in responding
+
+.center[
+![](imgs/error-score-1.png)
+]
+
+.pull-left[
+We can calculate using:
+
+`\(AE = |x_{i} - T|\)`
+
+`\(Mean \,AE = \sum|x_{i} - T|/n\)`
+]
+
+--
+
+.pull-right[
+
+```r
+# Calculate AE
+(abs(93 - 100) + abs(103 - 100) + abs(99 - 100) + abs(105 - 100) + abs(96 - 100)) / 5
+```
+
+```
+## [1] 4
+```
+
+Mean AE = 4 cm
+
+.black[*How do we interpret this?*]
+]
+
+---
+
+## Let's return to this 6 trial block
+
+.center[
+![](imgs/error-score-3.png)
+]
+
+
+```r
+# Calculate CE
+((98 - 100) + (99 - 100) + (102 - 100) + (104 - 100) + (96 - 100) + (101 - 100)) / 6
+```
+
+```
+## [1] 0
+```
+
+```r
+# Calculate AE
+round((abs(98 - 100) + abs(99 - 100) + abs(102 - 100) + abs(104 - 100) + abs(96 - 100) + abs(101 - 100)) / 6, 1)
+```
+
+```
+## [1] 2.3
+```
+
+.center[
+### .black[*What do we learn from this?*]
+]
+
+---
+
+## What is the relationship among CE, VE, and AE?
+
+.footnote[Schmidt &amp; Lee 2011; Schutz &amp; Roy 1973 (https://doi.org/10.1080/00222895.1973.10734959)]
+
+&lt;table class=" lightable-paper lightable-hover" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Person &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Trial 1 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Trial 2 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Trial 3 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Trial 4 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Trial 5 &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Jae &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 80 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 82 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 87 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Diane &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 95 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 100 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 97 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 102 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+--
+
+.black[*What are the mean CE, VE, and AE scores for Jae and Diane?*]
+
+--
+
+&lt;br&gt;
+&lt;table class=" lightable-paper lightable-hover" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Person &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CE &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; VE &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; AE &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Jae &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -15.2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.54 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15.2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Diane &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.54 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.0 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+## We can transform CE into .grey[absolute constant error]
+
+.center[
+![](imgs/error-score-1.png)
+]
+
+.pull-left[
+We can calculate using:
+
+`\(Mean \,CE = \sum(x_{i} - T)/n\)`
+
+`\(Mean \,ACE = |CE|\)`
+]
+
+--
+
+.pull-right[
+
+```r
+# Calculate CE
+abs(((93 - 100) + (103 - 100) + (99 - 100) + (105 - 100) + (96 - 100)) / 5)
+```
+
+```
+## [1] 0.8
+```
+
+Mean ACE = 0.8 cm
+
+Recall AE = 4 cm ([See Slide 21](#ae))
+
+.black[*How do we interpret this?*]
+]
+
+---
+
+# Learning objectives
+
+1. Describe the differences between and give examples of **performance outcome** and **performance production** measures.
+
+2. Describe and compute **common error score measures** for different types of motor skills.
+
+.bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
+.tc[
+.black[&lt;ins&gt;Take-home message&lt;/ins&gt;:
+
+There are many ways we can measure motor performance. Often the appropriate measure depends on the individual, task/skill, and/or environment. Valid conclusions about motor behaviour depend on the use of appropriate measures.
+]]]
+
+---
+
+class: title-slide-final, middle
+background-image: url(https://raw.githubusercontent.com/cartermaclab/mackin-xaringan/main/imgs/logos/mcmaster-stack-color.png)
+background-size: 95px
+background-position: 9% 15%
+
+# What questions do you have?
+
+&lt;br&gt;
+
+|                                                                                                                |                                   |
+| :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| &lt;a href="mailto:michaelcarter@mcmaster.ca"&gt;.mackinred[&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;]                         | michaelcarter@mcmaster.ca                 |
+| &lt;a href="https://cartermaclab.org"&gt;.mackinred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]                                       | www.cartermaclab.org                        |
+| &lt;a href="https://twitter.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]                          | @cartermaclab                         |
+| &lt;a href="https://github.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]                              | @cartermaclab                           |
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="../../../js/mackin-xaringan.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
