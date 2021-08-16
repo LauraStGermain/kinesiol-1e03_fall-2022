@@ -13,47 +13,34 @@ There is **no** required textbook for this course. However, relevant chapters fr
 |---------------|---------------|------------------|---------------------------------------------------------|------------------|
 | 0             | Sept 7        | 0                | Welcome                                                 |                  |
 |               | Sept 9        | 1                | Motor skills: Fundamentals                              | Ch. 2            |
-|               |               |                  |                                                         |                  |
 | 1             | Sept 13       | 2                | Motor skills: Classification systems                    | Ch. 2            |
 |               | Sept 14       | 3                | Measurement: Error scores                               | Ch. 3            |
 |               | Sept 16       | 4                | HOMEWORK ASSIGNMENT 1                                   |                  |
-|               |               |                  |                                                         |                  |
 | 2             | Sept 20-23    |                  | PROJECT WEEK – NO CLASS                                 |                  |
-|               |               |                  |                                                         |                  |
 | 3             | Sept 27       | 5                | Measurement: Reaction time                              | Ch. 3            |
 |               | Sept 28       | 6                | Sensorimotor foundations                                | Ch. 6            |
 |               | Sept 30       | 7                | HOMEWORK ASSIGNMENT 2                                   |                  |
-|               |               |                  |                                                         |                  |
 | 4             | Oct 4         | 8                | Visuomotor foundations                                  | Ch. 6            |
 |               | Oct 5         | 9                | Classes of control                                      | Ch. 5            |
 |               | Oct 7         | 10               | Action preparation: Information-processing              | Ch. 8            |
-|               |               |                  |                                                         |                  |
 | 5             | Oct 11-14     |                  | READING WEEK – NO CLASS                                 |                  |
-|               |               |                  |                                                         |                  |
 | 6             | Oct 18        | 11               | Action preparation: Compatibility and complexity        | Ch. 8            |
 |               | Oct 19        | 12               | Action execution: Attention and coordination            | Ch. 7, 9         |
 |               | Oct 21        | 13               | Action execution: Speed and accuracy                    | Ch. 7            |
-|               |               |                  |                                                         |                  |
 | 7             | Oct 25        | 14               | Motor learning: Fundamentals                            | Ch. 11, 13       |
 |               | Oct 26        | 15               | Models of skill acquisition                             | Ch. 12           |
 |               | Oct 28        | 16               | HOMEWORK ASSIGNMENT 3                                   |                  |
-|               |               |                  |                                                         |                  |
 | 8             | Nov 1         |                  | PROJECT WEEK – NO CLASS                                 |                  |
-|               |               |                  |                                                         |                  |
 | 9             | Nov 8         | 17               | Attentional focus                                       | Ch. 9, 14        |
 |               | Nov 9         | 18               | Practice distribution and variability                   | Ch. 16           |
 |               | Nov 11        | 19               | Contextual interference                                 | Ch. 16           |
-|               |               |                  |                                                         |                  |
 | 10            | Nov 15        | 20               | Feedback: Fundamentals                                  | Ch. 15           |
 |               | Nov 16        | 21               | Feedback: Scheduling techniques                         | Ch. 15           |
 |               | Nov 18        | 22               | HOMEWORK ASSIGNMENT 4                                   |                  |
-|               |               |                  |                                                         |                  |
 | 11            | Nov 22        |                  | PROJECT WEEK – NO CLASS                                 |                  |
-|               |               |                  |                                                         |                  |
 | 12            | Nov 29        | 23               | Observation (Guest lecture by Laura St. Germain)        | Ch. 14           |
 |               | Nov 30        | 24               | Metascience                                             |                  |
 |               | Nov 2         | 25               | Metascience in motor learning                           |                  |
-|               |               |                  |                                                         |                  |
 | 13            | Dec 6         | 26               | Looking ahead: Research opportunities at Mac (OPTIONAL) |                  |
 
 ## Acknowledgments
