@@ -18,12 +18,12 @@ You can access this textbook for free through the McMaster University Library: h
 | **Week**      | **Date**      | **Lecture**      | **Topic**                                               | **Reading**      |
 |---------------|---------------|------------------|---------------------------------------------------------|------------------|
 | 0             | Sept 7        | 0                | Welcome                                                 |                  |
-|               | Sept 9        | 1                | Motor skills: Fundamentals                              | Ch. 2            |
-| 1             | Sept 13       | 2                | Motor skills: Classification systems                    | Ch. 2            |
-|               | Sept 14       | 3                | Measurement: Error scores                               | Ch. 3            |
+|               | Sept 9        | 1                | Motor skills: Fundamentals                              | Ch. 1            |
+| 1             | Sept 13       | 2                | Motor skills: Classification systems                    | Ch. 1            |
+|               | Sept 14       | 3                | Measurement: Error scores                               | Ch. 2            |
 |               | Sept 16       | 4                | HOMEWORK ASSIGNMENT 1                                   |                  |
 | 2             | Sept 20-23    |                  | PROJECT WEEK – NO CLASS                                 |                  |
-| 3             | Sept 27       | 5                | Measurement: Reaction time                              | Ch. 3            |
+| 3             | Sept 27       | 5                | Measurement: Reaction time                              | Ch. 2            |
 |               | Sept 28       | 6                | Sensorimotor foundations                                | Ch. 6            |
 |               | Sept 30       | 7                | HOMEWORK ASSIGNMENT 2                                   |                  |
 | 4             | Oct 4         | 8                | Visuomotor foundations                                  | Ch. 6            |
