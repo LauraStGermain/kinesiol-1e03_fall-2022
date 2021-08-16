@@ -1,11 +1,17 @@
 # Motor Control and Learning (KINESIOL 1E03 at McMaster University)
 
+## Fall 2021 offering
+
+The course is co-taught by Dr. Mike Carter (Motor control section - Sept 7 to Oct 21) and Dr. Brad McKay (Motor learning section - Oct 25 to Dec 2). Dr. McKay will be adding two new metascience lectures to KINESIOL 1E03 this year.
+
 ## Course description
 
 Examination of the behavioural and psychological principles of motor control and motor learning. Topics include measurement of motor performance, sensory processes, perception, memory, attention, practice and feedback, and neuroscience fundamentals in motor control.
 
 ## Course material
-There is **no** required textbook for this course. However, relevant chapters from Magill, R., & Anderson, D. (2017). *Motor learning and control: Concepts and applications* are listed as supplemental readings. You can access this textbook for free through the McMaster University Library: http://libaccess.mcmaster.ca/login?url=https://accessphysiotherapy.mhmedical.com/Book.aspx?bookid=2311. You will need to login using your MacID and password to access the textbook.
+There is **no** required textbook for this course. However, relevant chapters from Magill, R., & Anderson, D. (2017). *Motor learning and control: Concepts and applications* are listed as supplemental readings. 
+
+You can access this textbook for free through the McMaster University Library: http://libaccess.mcmaster.ca/login?url=https://accessphysiotherapy.mhmedical.com/Book.aspx?bookid=2311. You will need to login using your MacID and password to access the textbook.
 
 ## Course schedule
 
@@ -30,14 +36,14 @@ There is **no** required textbook for this course. However, relevant chapters fr
 | 7             | Oct 25        | 14               | Motor learning: Fundamentals                            | Ch. 11, 13       |
 |               | Oct 26        | 15               | Models of skill acquisition                             | Ch. 12           |
 |               | Oct 28        | 16               | HOMEWORK ASSIGNMENT 3                                   |                  |
-| 8             | Nov 1         |                  | PROJECT WEEK – NO CLASS                                 |                  |
+| 8             | Nov 1-4       |                  | PROJECT WEEK – NO CLASS                                 |                  |
 | 9             | Nov 8         | 17               | Attentional focus                                       | Ch. 9, 14        |
 |               | Nov 9         | 18               | Practice distribution and variability                   | Ch. 16           |
 |               | Nov 11        | 19               | Contextual interference                                 | Ch. 16           |
 | 10            | Nov 15        | 20               | Feedback: Fundamentals                                  | Ch. 15           |
 |               | Nov 16        | 21               | Feedback: Scheduling techniques                         | Ch. 15           |
 |               | Nov 18        | 22               | HOMEWORK ASSIGNMENT 4                                   |                  |
-| 11            | Nov 22        |                  | PROJECT WEEK – NO CLASS                                 |                  |
+| 11            | Nov 22-25     |                  | PROJECT WEEK – NO CLASS                                 |                  |
 | 12            | Nov 29        | 23               | Observation (Guest lecture by Laura St. Germain)        | Ch. 14           |
 |               | Nov 30        | 24               | Metascience                                             |                  |
 |               | Nov 2         | 25               | Metascience in motor learning                           |                  |
