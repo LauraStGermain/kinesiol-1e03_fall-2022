@@ -2,7 +2,7 @@
 
 ## Fall 2021 offering
 
-The course is co-taught by Dr. Mike Carter (Motor control section - Sept 7 to Oct 21) and Dr. Brad McKay (Motor learning section - Oct 25 to Dec 2). Dr. McKay will be adding two new metascience lectures to KINESIOL 1E03 this year.
+The course is co-taught by Mike Carter (Motor control section - Sept 7 to Oct 21) and Brad McKay (Motor learning section - Oct 25 to Dec 2).
 
 ## Course description
 
