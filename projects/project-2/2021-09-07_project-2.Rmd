@@ -1,0 +1,69 @@
+---
+title: |
+    \vspace{-2em}Project 2
+subtitle: "KINESIOL 1E03 - Motor control and learning"
+author: |
+    \textcolor{maroon}{\textbf{Submission period opens: Nov 8 2021}}  
+    \textcolor{maroon}{\textbf{Submission period closes: Nov 15 2021 by 23:59 EST}}
+output: hrbrthemes::ipsum_pdf
+header-includes:
+    \usepackage[sfdefault,condensed]{roboto}
+    \usepackage[T1]{fontenc}
+    \setlength{\headheight}{38.5pt}
+    \usepackage{xcolor}
+    \usepackage{float}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancypagestyle{plain}{\pagestyle{fancy}}
+    \fancyhead[L]{\includegraphics[width=2in,height=2in]{../../outline/mackin-left-color.png}}
+    \fancyhead[R]{Project 2 instructions (Fall 2021)}
+    \definecolor{maroon}{HTML}{7a003c}
+mainfont: RobotoCondensed
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  dev = "cairo_pdf")
+```
+
+# Instructions
+
+YouTube is arguably the most popular information platform. You can find a video or channel on virtually any topic one can imagine, and it is all too easy to *"fall"* down the proverbial *rabbit hole* of content. (Thanks autoplay!) For this project, you will take on the role of *YouTube content creator*; thus, the emphasis of this project is on oral communication. **This project must be completed with a partner**. Choose and complete one of the two options below for your video creation. Independent of which option you select, your video should be 8 to 10 mins in length and it is **not** simply a re-hashing of lecture material. This project is an opportunity get creative and have some fun.
+
+# Option 1: Explain a concept in 3 levels of difficulty
+
+A challenge with science communication is being able to explain the same idea, concept, technique, etc to a wide range of individuals. A really good example of this can be found on WIRED magazine's YouTube channel in their "Explain a concept in 5 levels of difficulty" series. In these videos, an Expert would be challenged to explain a single concept in 5 levels of difficulty: Level 1 was a child, level 2 was a teen, level 3 was a college/university student, level 4 was a graduate student, and level 5 was a fellow expert.
+
+You and your partner will need to choose a motor control and learning concept, topic, or technique. Your task is to then make a video where you explain your choice in 3 levels of difficulty: Level 1 is to a grade 5 student, level 2 is to a grade 9 student, and level 3 is to a 1st year non-kinesiology undergraduate student. 
+
+Here are a some links to ones from WIRED magazine's channel:
+
+- Computer Scientist explains machine learning in 5 levels of difficulty (https://youtu.be/5q87K1WaoFI)
+
+- Nanotechnology Expert explains one concept in 5 levels of difficulty (https://youtu.be/WW0IIyrq8z4)
+
+- Astrophysicist explains gravity in 5 levels of difficulty (https://youtu.be/QcUey-DVYjk)
+
+# Option 2: Movement science education
+
+When I was young, one of my favourite things to watch on tv was *Bill Nye the Science Guy*. Nowadays, there are tons of YouTube channels that continue this tradition in some form or another. This includes Veritasium, Khan Academy, Simone Giertz, 3Blue1Brown, Physics Girl, and SmarterEveryDay to name some.
+
+You and your partner will need to choose a motor control and learning concept, topic, or technique. Your task is to then create a movement science education video in a manner reminiscent of the example channels listed above (or some other one you know about that I have yet to come across).
+
+Here are some links to ones from some of the channels I listed above:
+
+- Angular momentum by Physics Girl (https://youtu.be/2WZ1PZ7imrI)
+
+- The biggest myth in education by Veritasium (https://youtu.be/rhgwIhB58PA)
+
+- Simulating an epidemic by 3Blue1Brown (https://youtu.be/gxAaO2rsdIs)
+
+- Natural selection and evolution by Khan Academy (https://youtu.be/ifyEocJ2Rog)
+
+# Submission guidelines
+
+Project 2 should be submitted via Avenue. Late submissions will be penalized 20% per day.
+
+Only one student needs to submit the file on for both you and your partner. The submitted file must include both students' last name, first initial, and student IDs using the following format: `p2_last-initial_ID_last-initial_ID`. For instance, if Brad and I completed the project together and I was the one submitting for us, I would submit a file named: `p2_carter-m_3351871_mckay-b_5819286.mp4` (or some other video file extension).
+
+Be sure to submit your file to the correct folder. Files submitted to the wrong folder **will not be marked**. If you need to resubmit your file to the correct folder after the due date, it will be considered late.
