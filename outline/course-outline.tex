@@ -1,0 +1,320 @@
+% LATEX TEMPLATE FOR CREATING COURSE OUTLINES
+% BASED ON MCMASTER UNIVERSITY FACULTY OF SCIENCE AODA COURSE OUTLINE TEMPLATE
+% THEIR PROVIDED TEMPLATE IS IN MS TURD WHICH IS PROPRIETARY GARBAGE AND 
+% NOT AN ACCESSIBLE FORMAT FOR THOSE NOT RUNNING WINDOZE OR MAC OS
+
+% DOCUMENT SETUP ----------
+\documentclass[hidelinks,11pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[default]{sourcesanspro}
+%\usepackage{lmodern}
+%\renewcommand*\familydefault{\sfdefault}
+\usepackage[default,scale=0.91]{opensans}
+\usepackage[document]{ragged2e}
+\usepackage{calc} % This is a helpful package that puts math inside length specifications
+\usepackage[shortcuts]{extdash}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor = blue,
+	urlcolor = blue,
+  citecolor = blue,
+  anchorcolor = blue
+}
+\urlstyle{same}
+\usepackage[usenames,dvipsnames,svgnames,table,xcdraw]{xcolor}
+\usepackage[paper=letterpaper,
+            includefoot, % Uncomment to put page number above margin
+            marginparwidth=0.0in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            %margin=1in,               % 1 inch margins
+            left=0.75in,
+            top=0.9in,
+            bottom=0.69in,
+            right=0.63in,
+            includemp]{geometry}
+	   \pagestyle{empty}
+
+\setlength{\parindent}{0in} % Get rid of indenting throughout entire document
+\usepackage{}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0.0pt} % sets line size of header / footer
+\renewcommand{\footrulewidth}{0.0pt}
+\setlength{\headheight}{30pt}
+%\addtolength{\topmargin}{29.92224pt}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{titlesec}
+%\titleformat*{\section}{\fontsize{16}{20}\selectfont}
+%\titleformat*{\subsection}{\fontsize{14}{17}\selectfont}
+%\titleformat*{\subsubsection}{\fontsize{13}{16}\selectfont}
+%https://tex.stackexchange.com/questions/59726/change-size-of-section-subsection-subsubsection-paragraph-and-subparagraph-ti
+%https://www.overleaf.com/learn/latex/Paragraph_formatting
+\usepackage{setspace}
+\definecolor{maroon}{HTML}{7a003c} % McMaster Heritage Maroon
+\definecolor{lightgray}{HTML}{efefef} % McMaster Light Gray for background boxes
+\definecolor{coolgray}{HTML}{dbdbdd} % McMaster Cool Gray
+\definecolor{graytext}{HTML}{4f595f} % Use for gray text portions such as header
+\definecolor{macblue}{HTML}{007096} % McMaster Heritage Maroon
+
+% ----------
+
+\begin{document}
+
+%\pagenumbering{gobble}
+\pagestyle{fancy}
+
+\lhead{\includegraphics[height=1.5cm]{mackin-left-color.png}}
+%\rhead{\textbf{COURSE OUTLINE} \\ \textbf{KINESIOL 1E03} \\ \vspace*{0.15cm} \textbf{Motor Control \& Learning} \\ \textbf{Fall Semester 2019 \\}}
+%\lfoot{}
+\cfoot{{\noindent\color{coolgray}{\rule{18cm}{1mm}} \medskip \color{maroon}Page \textbf{\thepage}~of~\textbf{\color{maroon}\pageref*{LastPage}}}} 
+%\rfoot{}
+
+\begin{flushleft}
+{\fontsize{8}{10} \selectfont\emph{\color{graytext}{We recognize and acknowledge that McMaster University meets and learns on the traditional territories of the Mississauga and Haudenosaunee nations, and within the lands protected by the \underline{{\color{maroon}{``Dish With One Spoon''}}} wampum, an agreement amongst all allied Nations to peaceably share and care for the resources around the Great Lakes.}}} \medskip
+\noindent\color{coolgray}{\rule{17.5cm}{0.3mm}}
+\end{flushleft}
+
+\spacing{1.5}
+%\onehalfspacing
+%\doublespacing
+
+\vspace{-2em}
+\begin{center}
+  \textbf{\fontsize{15}{18} \selectfont {{\color{maroon}KINESIOL 1E03 - MOTOR CONTROL AND LEARNING}}} 
+\medskip
+
+  \textbf{\fontsize{15}{18} \selectfont {{\color{maroon}2021 Fall Term}}}
+\end{center}
+
+
+\colorbox{lightgray}{\rlap{{{\hspace{3.5em}\color{maroon}\textbf{Instructor:}} Dr. Mike Carter \ \ $|$ \ \ {\color{maroon}\textbf{Email:}} \href{https://youtu.be/2ocykBzWDiM}{\underline{michaelcarter@mcmaster.ca}} \ \ $|$ \ \ {\color{maroon}\textbf{Office:}} IWC 203}}\hspace{\linewidth}\hspace{-2\fboxsep}}
+
+\medskip
+
+\colorbox{lightgray}{\rlap{{{\hspace{4.5em}\color{maroon}\textbf{Instructor:}} Dr. Brad McKay \ \ $|$ \ \ {\color{maroon}\textbf{Email:}} \href{https://youtu.be/-F5HwiGm7lg}{\underline{mckayb9@mcmaster.ca}} \ \ $|$ \ \ {\color{maroon}\textbf{Office:}} AB 131 A-1}}\hspace{\linewidth}\hspace{-2\fboxsep}}
+
+\subsection*{{\color{maroon}{\textbf{Course Description}}}}
+Examination of the behavioural and psychological principles of motor control and motor learning. Topics include measurement of motor performance, sensory processes, perception, memory, attention, practice and feedback, and neuroscience fundamentals in motor control.
+
+{\color{maroon}{\textbf{Prerequisite(s):}}} Registration in Level I Honours Kinesiology
+%{\color{maroon}{\textbf{Antirequisite(s):}}}
+
+\subsection*{{\color{maroon}{\textbf{Course and Learning Objectives}}}}
+\vspace{-0.75em}\subsubsection*{{\color{maroon}{\textbf{Content-based Learning Objectives}}}}
+\vspace{-0.75em}\textbf{Upon completion of this course, the student will be able to:}
+\vspace{-0.5em}\begin{enumerate}\itemsep0em
+  \item Explain the distinction between behaviour that is goal-directed and behaviour that is not goal-directed.
+  \item Identify and describe different taxonomies used to classify motor skills.
+  \item List, explain, and calculate common variables used to measure motor performance.
+  \item Describe sensory systems that support human motor behaviour.
+  \item Compare and constrast different classes of control.
+  \item Describe processes underlying motor preparation and factors that influence preparation.
+  \item Describe and explain the interaction between attention and motor performance.
+  \item Describe the relationship between speed and accuracy in aiming tasks.
+  \item Define and distinguish between the terms performance and learning.
+  \item Identify and describe different methods to assess motor skill learning.
+  \item Compare and constrast different models of skill acquisition.
+  \item Identify, describe, and compare different conditions of practice for learning.
+  \item Explain why some conditions of practice are more effective than other conditions.
+  \item Interpret, summarize, and discuss data from common tasks used in the study of motor control and learning.
+  \item Define metascience and discuss its relevance to motor learning and control research.
+\end{enumerate}
+
+\vspace{-0.75em}\subsubsection*{{\color{maroon}{\textbf{Skill-based Learning Objectives}}}}
+\vspace{-0.75em}\textbf{Upon completion of this course, the student will be able to:}
+\vspace{-0.5em}\begin{enumerate}\itemsep0em
+  \item Locate, synthesize, and critically appraise relevant research.
+  \item Differentiate scientific and non-scientific sources of information.
+  \item Develop effective strategies to work independently and collaboratively in small teams.
+  \item Successfully navigate unforeseen challenges as they arise through collaborative problem-solving.
+  \item Disseminate scientific information and share own ideas through written and oral communication.
+  \item Apply effective time management techniques to deliver required products on time.  
+\end{enumerate}
+  
+
+\subsection*{{\color{maroon}{\textbf{Materials \& Fees}}}}
+\vspace{-0.75em}\subsubsection*{{\color{maroon}{\textbf{Required Materials / Resources}}}}
+There is no required textbook for this course. Relevant chapters from the supplemental textbook are included for those interested in additional information beyond that covered in the lectures. 
+
+\vspace{-0.75em}\subsubsection*{{\color{maroon}{\textbf{Supplementary Materials / Resources}}}}
+\vspace{-0.5em}\begin{enumerate}\itemsep0em
+  \item Magill, R., \& Anderson, D. (2017). \emph{Motor learning and control: Concepts and applications}
+  \vspace{-0.5em}\begin{itemize}
+    \item You can access the textbook for free through the McMaster Library \href{http://libaccess.mcmaster.ca/login?url=https://accessphysiotherapy.mhmedical.com/Book.aspx?bookid=2311}{\underline{here.}}
+    \item You will need to login using your MacID and password to access the textbook.
+  \end{itemize}
+  \end{enumerate}
+
+\subsection*{{\color{maroon}{\textbf{Virtual Course Delivery}}}}
+\vspace{-0.75em}\textbf{To follow and participate in virtual classes it is expected that you have reliable access to the following:}
+\vspace{-2.5em}\begin{itemize}\itemsep0em
+  \item A computer that meets performance requirements \href{https://cto.mcmaster.ca/technology-resources-for-mcmaster-students/}{\underline{found here}}.
+  \item An internet connect that is fast enough to stream video.
+  \item Computer accessories that enable class participation, such as a microphone, speakers, and webcam when needed.
+\end{itemize}
+If you think that you will not be able to these requirements, please contact \href{mailto:uts@mcmaster.ca}{\underline{uts@mcmaster.ca}} as soon as you can. Please visit the \href{https://cto.mcmaster.ca/technology-resources-for-mcmaster-students/#tab-content-device-recommendations}{\underline{Technology Resources for Students page}} for detailed requirements. If you use assistive technology or believe that our platforms might be a barrier to participating, please contact \newline \href{https://sas.mcmaster.ca/}{\underline{Student Accessibility Services}}, \href{mailto:sas@mcmaster.ca}{\underline{sas@mcmaster.ca}}, for support.
+
+\subsection*{{\color{maroon}{\textbf{Course Overview and Assessment}}}}
+\vspace{-0.75em}\subsubsection*{{\color{maroon}{\textbf{Topics}}}}
+Our capacity to move is more than just a convenience allowing us to walk, play, or manipulate objects---it is a critical aspect of our evolutionary development (Schmidt 1982) because it provides the only means we have to interact with the world and other people (Wolpert, Ghahramani, \& Flanagan 2001). These interactions can be \emph{hard-wired} or learned through experience. Motor control and learning is the scientific field of study concerned with these interactions. This course is comprised of a Course Introduction (Sept 7), a Motor Control Module (Sept 9 to Oct 21), and a Motor Learning Module (Oct 25 to Dec 2). A \hyperref[tab:schedule]{course schedule} can be found on page \pageref{tab:schedule}.
+
+\subsection*{{\color{maroon}{\textbf{Evaluation}}}}
+%\begin{center}
+\begin{tabular}{p{0.28\textwidth}p{0.12\textwidth}p{0.2\textwidth}p{0.28\textwidth}}
+\hline
+  \rowcolor{lightgray} 
+  \textbf{Assessment Method}  & \textbf{Weight} & \textbf{Notes}  & \textbf{Due Date}           \\ 
+\hline
+  Homework Assignments        & 20\%            & 4 @ 5\% each    & Fridays by 23:59 EST        \\ 
+  Project 1                   & 25\%            & See below       & Between Sept 27 and Oct 4   \\
+  Project 2                   & 25\%            & See below       & Between Nov 8 and Nov 15    \\
+  Project 3                   & 30\%            & See below       & Between Nov 29 and Dec 7    \\
+\hline
+  \textbf{Total}				      & \textbf{100\%}  &                 &                             \\
+\hline
+\end{tabular}
+%\end{center}
+
+\vspace{-1em}\subsubsection*{{\color{maroon}{\textbf{Homework Assignments}}}}
+Four (4) homework assignments will be completed throughout the semester. These assignments will relate to course material and will challenge you to apply the knowledge you have gained. You are free to work on the homework assignments with your peers; however, you must submit your own assignment. A class slot will be devoted to each homework assignment to provide a dedicated period of time to work on and complete the assignment. Homework assignment classes always fall on a Thursday and the specific classes are Sept 16, Oct 7, Oct 28, and Nov 18. Each homework assignment will be made available at the start of the corresponding class. Each homework assignment is due the next day (Fridays) by 23:59 EST. Specific details regarding submission will be included on the posted assignment on Avenue to Learn.
+
+\vspace{-1em}\subsubsection*{{\color{maroon}{\textbf{Projects}}}}
+To help facilitate progress on your projects, three (3) dedicated project weeks will be provided throughout the semester. These project weeks provide dedicated time for you to work on your project, ask questions about your project, and/or solicit feedback on your ideas. Projects 1 and 2 are worth 25\% of your final grade and Project 3 is worth 30\% of your final grade. As such, the Projects are \textbf{not} eligible for an MSAF. Each project will have a corresponding submission window (see above) where the submission portal will open the Monday following the Project Week and close the next Monday. Specific details regarding the projects can be found on Avenue to Learn.
+  \begin{itemize}
+    \item {\color{maroon}{\textbf{Project 1:}}} In recent years, the use of blog posts as a way to share scientific ideas has seen a resurgence. For Project 1, you will take on the role of \emph{science blogger}; thus, the emphasis of this project is on written communication. To complete Project 1 you will need to choose one (1) of two (2) options: a) {\color{macblue}{\textbf{Fact or fiction blog post}}} or b) {\color{macblue}{\textbf{Researcher spotlight blog post}}}.
+    \item {\color{maroon}{\textbf{Project 2:}}} YouTube is arguably the most popular information platform. You can find a video or channel on virtually any topic one can imagine and it is all too easy to \emph{``fall"} down the proverbial \emph{rabbit hole} of content. (Thanks autoplay!) For Project 2, you will take on the role of \emph{YouTube content creator}; thus, the emphasis of this project is on oral communication. To complete Project 2 you will need to choose one (1) of two (2) options: a) {\color{macblue}{\textbf{Levels video}}} or b) {\color{macblue}{\textbf{Educational video}}}.
+    \item {\color{maroon}{\textbf{Project 3:}}} Broadly speaking, we can divide the research process into a data collection phase and a dissemination phase. In motor control and learning, the data collection phase requires creating and programming a task to address your research question, and the dissemination phase involves writing up your findings and submitting a manuscript for peer review. For Project 3, you will take on the role of \emph{motor behaviour researcher}. Given the \emph{``capstone"}-like nature of this project, the emphasis is multifaceted but a key focus is on successful collaboration. To complete Project 3 you will need to choose one (1) of two (2) options: a) {\color{macblue}{\textbf{Motor control task programming and data collection}}} or b) {\color{macblue}{\textbf{Mock motor learning journal article}}}.
+  \end{itemize}
+
+\subsection*{{\color{maroon}{\textbf{Requests for Relief for Missed Academic Term Work}}}}
+\href{https://secretariat.mcmaster.ca/university-policies-procedures-guidelines/msaf-mcmaster-student-absence-form/}{\underline{McMaster Student Absence Form (MSAF):}} In the event of an absence for medical or other reasons, students should review and follow the Academic Regulation in the Undergraduate Calendar ``Requests for Relief for Missed Academic Term Work".
+
+\subsection*{{\color{maroon}{\textbf{Academic Accommodation of Students with Disabilities}}}}
+Students with disabilities who require academic accommodation must contact \href{https://sas.mcmaster.ca}{\underline{Student Accessibility Services}} \textcolor{blue}{\underline{(SAS)}} at 905-525-9140 ext. 28652 or \href{mailto:sas@mcmaster.ca}{\underline{sas@mcmaster.ca}} to make arrangements with a Program Coordinator. For further information, consult McMaster University’s \href{https://secretariat.mcmaster.ca/app/uploads/Academic-Accommodations-Policy.pdf}{\underline{\emph{Academic Accommodation of Students with Disabilities}}} policy.
+
+\subsection*{{\color{maroon}{\textbf{Academic Accommodation for Religious, Indigeneous or Spiritual Observances (RISO)}}}}
+Students requiring academic accommodation based on religious, indigenous or spiritual observances should follow the procedures set out in the \href{https://secretariat.mcmaster.ca/app/uploads/2019/02/Academic-Accommodation-for-Religious-Indigenous-and-Spiritual-Observances-Policy-on.pdf}{\underline{RISO}} policy. Students should submit their request to their Faculty Office \textbf{\emph{normally within 10 working days}} of the beginning of term in which they anticipate a need for accommodation or to the Registrar's Office prior to their examinations. Students should also contact their instructors as soon as possible to make alternative arrangements for classes, assignments, and tests.
+
+\subsection*{{\color{maroon}{\textbf{Courses with an Online Element}}}}
+\textbf{\emph{Some courses may}} use on-line elements (e.g., e-mail, Avenue to Learn (A2L), LearnLink, web pages, capa, \newline Moodle, ThinkingCap, etc.). Students should be aware that, when they access the electronic components of a course using these elements, private information such as first and last names, user names for the McMaster e-mail accounts, and program affiliation may become apparent to all other students in the same course. The available information is dependent on the technology used. Continuation in a course that uses on-line elements will be deemed consent to this disclosure. If you have any questions or concerns about such disclosure, please discuss this with the course instructor.
+
+\subsection*{{\color{maroon}{\textbf{Online Proctoring}}}}
+\textbf{\emph{Some courses may}} use online proctoring software for tests and exams. This software may require students to turn on their video camera, present identification, monitor and record their computer activities, and/or lock/restrict their browser or other applications/software during tests or exams. This software may be required to be installed before the test/exam begins.
+
+\subsection*{{\color{maroon}{\textbf{Academic Integrity}}}}
+You are expected to exhibit honesty and use ethical behaviour in all aspects of the learning process. Academic credentials you earn are rooted in principles of honesty and academic integrity. \newline
+\textbf{It is your responsibility to understand what constitutes academic dishonesty.} \newline
+Academic dishonesty is to knowingly act or fail to act in a way that results or could result in unearned academic credit or advantage. This behaviour can result in serious consequences, e.g. the grade of zero on an assignment, loss of credit with a notation on the transcript (notation reads: ``Grade of F assigned for academic dishonesty''), and/or suspension or expulsion from the university. For information on the various types of academic dishonesty please refer to the \href{https://secretariat.mcmaster.ca/app/uploads/Academic-Integrity-Policy-1-1.pdf}{\emph{\underline{Academic Integrity Policy}}}.
+
+\vspace{1.5em}\textbf{The following illustrates only three forms of academic dishonesty}:
+    
+    \begin{itemize}\itemsep0em
+        \item plagiarism, e.g., the submission of work that is not one’s own or for which other credit has been obtained.
+        \item improper collaboration in group work.
+        \item copying or using unauthorized aids in tests and examinations.
+    \end{itemize}
+
+\subsection*{{\color{maroon}{\textbf{Authenticity / Plagiarism Detection}}}}
+\textbf{\emph{Some courses may}} use a web-based service (Turnitin.com) to reveal authenticity and ownership of student submitted work. For courses using such software, students will be expected to submit their work electronically either directly to Turnitin.com or via an online learning platform (e.g. A2L, etc.) using plagiarism detection (a service supported by Turnitin.com) so it can be checked for academic dishonesty. Students who do not wish their work to be submitted through the plagiarism detection software must inform the Instructor before the assignment is due. No penalty will be assigned to a student who does not submit work to the plagiarism detection software. \textbf{All submitted work is subject to normal verification that standards of academic integrity have been upheld} (e.g., on-line search, other software, etc.). For more details about McMaster’s use of Turnitin.com please go to the \href{www.mcmaster.ca/academicintegrity}{\textcolor{blue}{\underline{McMaster Office of Academic Integrity’s}}} webpage.
+
+\subsection*{{\color{maroon}{\textbf{Conduct Expectations}}}}
+As a McMaster student, you have the right to experience, and the responsibility to demonstrate, respectful and dignified interactions within all of our living, learning and working communities. These expectations are described in the \href{https://secretariat.mcmaster.ca/app/uploads/Code-of-Student-Rights-and-Responsibilities.pdf}{\underline{Code of Student Rights \& Responsibilities (the "Code")}}. All students share the responsibility of maintaining a positive environment for the academic and personal growth of all McMaster community members, \textbf{whether in person or online}.
+
+It is essential that students be mindful of their interactions online, as the Code remains in effect in virtual learning environments. The Code applies to any interactions that adversely affect, disrupt, or interfere with reasonable participation in University activities. Student disruptions or behaviours that interfere with university functions on online platforms (e.g. use of Avenue 2 Learn, WebEx or Zoom for delivery), will be taken very seriously and will be investigated. Outcomes may include restriction or removal of the involved students’ access to these platforms.
+
+\subsection*{{\color{maroon}{\textbf{Copyright and Recording}}}}
+Students are advised that lectures, demonstrations, performances, and any other course material
+provided by an instructor include copyright protected works. The Copyright Act and copyright law
+protect every original literary, dramatic, musical and artistic work, including lectures by University
+instructors. \medskip
+
+The recording of lectures, tutorials, or other methods of instruction may occur during a course.
+Recording may be done by either the instructor for the purpose of authorized distribution, or by a
+student for the purpose of personal study. Students should be aware that their voice and/or image may
+be recorded by others during the class. Please speak with the instructor if this is a concern for you.
+
+\vspace{-1em}\subsubsection*{{\color{maroon}{\textbf{Additional Copyright Information}}}}
+\vspace{-0.5em}All course created material is copyrighted and is for the sole use of students registered in KINESIOL 1E03 Fall 2021. This material shall not be distributed or disseminated to anyone other than students registered in KINESIOL 1E03 Fall 2021. Under no circumstance are you allowed to share or redistribute this material in any printed or electronic form without the explicit written consent of the copyright holder. This includes posting any course material on Internet bulletin boards, course repositories, social networks, etc. Failure to abide by these conditions is a breach of copyright and may also constitute a breach of academic integrity under the University’s Academic Integrity Policy.
+
+\subsection*{{\color{maroon}{\textbf{Extreme Circumstances}}}}
+The University reserves the right to change the dates and deadlines for any or all courses in extreme circumstances (e.g., severe weather, labour disruptions, etc.). Changes will be communicated through regular McMaster communication channels, such as McMaster Daily News, A2L and/or McMaster email.
+
+\newpage
+\begin{table}[]
+  \caption{Fall 2021 Course Schedule (\emph{Tentative and subject to change}).}
+  \label{tab:schedule}
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lllll}
+  \hline
+  \rowcolor{lightgray}
+  \textbf{Week} &           \textbf{Date}                         & \textbf{Lecture}          & \textbf{Topic}                                          & \textbf{Reading} \\ 
+  \hline
+0                           & Sept 7                              & 0                         & Welcome                                                 &                  \\
+                            & Sept 9                              & 1                         & Motor skills: Fundamentals                              & Ch. 2            \\
+                            &                                     &                           &                                                         &                  \\
+1                           & Sept 13                             & 2                         & Motor skills: Classification systems                    & Ch. 2            \\
+                            & Sept 14                             & 3                         & Measurement: Error scores                               & Ch. 3            \\
+                            & \color{maroon}{\emph{Sept 16}}      & \color{maroon}{\emph{4}}  & \color{maroon}{\emph{Homework assignment 1}}            &                  \\
+                            &                                     &                           &                                                         &                  \\
+\rowcolor{lightgray}
+\color{macblue}{\emph{2}}   & \color{macblue}{\emph{Sept 20-23}}  &                           & \color{macblue}{\emph{Project Week – No Lectures}}      &                  \\
+                            &                                     &                           &                                                         &                  \\
+3                           & Sept 27                             & 5                         & Measurement: Reaction time                              & Ch. 3            \\
+                            & Sept 28                             & 6                         & Sensorimotor foundations                                & Ch. 6            \\
+                            & Sept 30                             & 7                         & Visuomotor foundations                                  & Ch. 6            \\
+                            &                                     &                           &                                                         &                  \\
+4                           & Oct 4                               & 8                         & Classes of control                                      & Ch. 5            \\
+                            & Oct 5                               & 9                         & Action preparation: Information-processing              & Ch. 8            \\
+                            & \color{maroon}{\emph{Oct 7}}       & \color{maroon}{\emph{10}} & \color{maroon}{\emph{Homework assignment 2}}            &                  \\
+                            &                                     &                           &                                                         &                  \\
+\rowcolor{lightgray}
+\textbf{5}                  & \textbf{Oct 11-14}                  &                           & \textbf{Reading Week – No Class}                        &                  \\
+                            &                                     &                           &                                                         &                  \\
+6                           & Oct 18                              & 11                        & Action preparation: Compatibility and complexity        & Ch. 8            \\
+                            & Oct 19                              & 12                        & Action execution: Attention and coordination            & Ch. 7, 9         \\
+                            & Oct 21                              & 13                        & Action execution: Speed and accuracy                    & Ch. 7            \\
+                            &                                     &                           &                                                         &                  \\
+7                           & Oct 25                              & 14                        & Motor learning: Fundamentals                            & Ch. 11, 13       \\
+                            & Oct 26                              & 15                        & Models of skill acquisition                             & Ch. 12           \\
+                            & \color{maroon}{\emph{Oct 28}}       & \color{maroon}{\emph{16}} & \color{maroon}{\emph{Homework assignment 3}}            &                  \\
+                            &                                     &                           &                                                         &                  \\
+\rowcolor{lightgray}
+\color{macblue}{\emph{8}}   & \color{macblue}{\emph{Nov 1-4}}     &                           & \color{macblue}{\emph{Project Week – No Lectures}}      &                  \\
+                            &                                     &                           &                                                         &                  \\
+9                           & Nov 8                               & 17                        & Attentional focus                                       & Ch. 9, 14        \\
+                            & Nov 9                               & 18                        & Practice distribution and variability                   & Ch. 16           \\
+                            & Nov 11                              & 19                        & Contextual interference                                 & Ch. 16           \\
+                            &                                     &                           &                                                         &                  \\
+10                          & Nov 15                              & 20                        & Feedback        : Fundamentals                          & Ch. 15           \\
+                            & Nov 16                              & 21                        & Feedback: Scheduling techniques                         & Ch. 15           \\
+                            & \color{maroon}{\emph{Nov 18}}       & \color{maroon}{\emph{22}} & \color{maroon}{\emph{Homework assignment 4}}            &                  \\
+                            &                                     &                           &                                                         &                  \\
+\rowcolor{lightgray}
+\color{macblue}{\emph{11}}  & \color{macblue}{\emph{Nov 22-25}}   &                           & \color{macblue}{\emph{Project Week – No Lectures}}      &                  \\
+                            &                                     &                           &                                                         &                  \\
+12                          & Nov 29                              & 23                        & Observation (Guest lecture by Laura St. Germain)        & Ch. 14           \\
+                            & Nov 30                              & 24                        & Metascience                                             &                  \\
+                            & Dec 2                               & 25                        & Metascience in motor learning                           &                  \\
+                            &                                     &                           &                                                         &                  \\
+13                          & Dec 6                               & 26                        & Looking ahead: Research opportunities at Mac (OPTIONAL) &                  \\ 
+\hline
+  \end{tabular}%
+  }
+  \end{table}
+
+
+
+
+
+
+\end{document}
