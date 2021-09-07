@@ -81,7 +81,7 @@ class: title-slide-section-gold, center, middle
 
 5. How can a therapist or coach estimate a client's potential for (re)learning a skill?
 
-6. Should a performer focus attention on his or her bodily movement?
+6. Should a performer focus attention on their bodily movement?
 
 ---
 
