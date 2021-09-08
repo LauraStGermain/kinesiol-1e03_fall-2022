@@ -17,7 +17,7 @@ You can access this textbook for free through the McMaster University Library: h
 
 | **Week**      | **Date**      | **Lecture**      | **Topic**                                               | **Reading**      |
 |---------------|---------------|------------------|---------------------------------------------------------|------------------|
-| 0             | Sept 7        | 0                | Welcome                                                 |                  |
+| 0             | Sept 7        | 0                | [Welcome][0]                                            |                  |
 |               | Sept 9        | 1                | Motor skills: Fundamentals                              | Ch. 1            |
 | 1             | Sept 13       | 2                | Motor skills: Classification systems                    | Ch. 1            |
 |               | Sept 14       | 3                | Measurement: Error scores                               | Ch. 2            |
@@ -51,3 +51,5 @@ You can access this textbook for free through the McMaster University Library: h
 
 ## Acknowledgments
 Content for this course, in one shape or another, has come from a variety of people over the years. Thanks to Dr. Jae Patterson (Brock University), Dr. Diane Ste-Marie (uOttawa), Dr. Tony Carlsen (uOttawa), Dr. Dana Maslovat (Langara College), Dr. Erin Cressman (uOttawa), Dr. Tyler Cluff (University of Calgary).
+
+[0]: https://cartermaclab.github.io/kinesiol-1e03/lectures/week-00/lecture-00_welcome/00_course-welcome.html
