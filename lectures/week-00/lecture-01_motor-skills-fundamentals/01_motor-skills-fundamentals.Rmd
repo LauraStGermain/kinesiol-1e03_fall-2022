@@ -22,18 +22,25 @@ options(htmltools.dir.version = FALSE)
 ```
 
 ```{r xaringanExtra, echo=FALSE}
-xaringanExtra::use_xaringan_extra(c("freezeframe", "tachyons"))
+xaringanExtra::use_xaringan_extra(c("clipboard",
+                                    "freezeframe",
+                                    "panelset",
+                                    "scribble",
+                                    "tachyons", 
+                                    "tile_view"))
 ```
 
 
 ## How would you describe these two situations?
 
+.footnote[Left: https://thumbs.gfycat.com/AdoredCarefulCopperbutterfly-size_restricted.gif; Right: https://thumbs.gfycat.com/CheapHardBullfrog-size_restricted.gif]
+
 .pull-left[
-![:scale 100%](https://i.makeagif.com/media/4-20-2017/YS7bw-.gif)
+![:scale 100%](https://thumbs.gfycat.com/AdoredCarefulCopperbutterfly-size_restricted.gif)
 ]
 
-.pull-right[
-![](https://www.totalprosports.com/wp-content/uploads/2014/02/braden-holtby-kick-save-amazing-hockey-save-gifs.gif)
+.pull-right[<br>
+![:scale 100%](https://thumbs.gfycat.com/CheapHardBullfrog-size_restricted.gif)
 ]
 
 ---
@@ -53,12 +60,12 @@ xaringanExtra::use_xaringan_extra(c("freezeframe", "tachyons"))
 .tc[
 .black[Take-home message:
 
-There are some foundational terms and concepts in the study of motor behaviour terms that often get used incorrectly in both everyday life and professional sports.
+There are some foundational terms and concepts in the study of motor behaviour that often get used incorrectly in both everyday life and professional sports.
 ]]]
 
 ---
 
-## Skill domains
+## We can .grey[categorize] skills into one of three domains
 
 .black[COGNITIVE SKILLS]: Depend on an individual's **knowledge and mental abilities**
 
@@ -76,7 +83,7 @@ There are some foundational terms and concepts in the study of motor behaviour t
 
 ---
 
-## Motor skills are...
+## .grey[Motor] skills are...
 
 - goal-directed and performed voluntarily
 - require movements of joints and body segments via muscular contractions
@@ -100,7 +107,7 @@ There are some foundational terms and concepts in the study of motor behaviour t
 
 ---
 
-## Motor skills are...
+## .grey[Motor] skills are...
 
 - goal-directed and performed voluntarily
 - require movements of joints and body segments via muscular contractions
@@ -118,7 +125,7 @@ There are some foundational terms and concepts in the study of motor behaviour t
 
 ---
 
-## Motor skills are...
+## .grey[Motor] skills are...
 
 - goal-directed and performed voluntarily
 - require movements of joints and body segments via muscular contractions
@@ -134,7 +141,7 @@ Component parts of a skill that are **observable and measurable**
 
 ---
 
-## Why is it important to distinguish between motor skills and movements?
+## Why is it important to .grey[distinguish] between motor skills and movements?
 
 .footnote[<sup>1</sup>Will see this in the *Measuring motor performance* lectures]
 
@@ -149,7 +156,7 @@ Component parts of a skill that are **observable and measurable**
 
 ---
 
-## Characteristics of skilled performance
+## Characteristics of .grey[skilled performance]
 
 .footnote[<sup>2</sup>Guthrie 1952]
 
@@ -166,7 +173,7 @@ Component parts of a skill that are **observable and measurable**
 
 ---
 
-## Four characteristics of motor skills
+## Four .grey[characteristics] of motor skills
 
 .footnote[Source: https://neurology.mhmedical.com/data/books/1049/kan_ch33_f001.png]
 
@@ -178,7 +185,7 @@ Component parts of a skill that are **observable and measurable**
 
 ---
 
-## Four characteristics of motor skills
+## Four .grey[characteristics] of motor skills
 
 .footnote[Scott 2004 (https://doi.org/10.1038/nrn1427); Todorov & Jordon 2002 (https://doi.org/10.1038/nn963)]
 
@@ -190,19 +197,19 @@ Component parts of a skill that are **observable and measurable**
 
 ---
 
-## Four characteristics of motor skills
+## Four .grey[characteristics] of motor skills
 
-.footnote[Source: https://img.izismile.com/img/img11/20180816/gifs/daily_gifdump_2884_03.gif]
+.footnote[Source: https://i.kym-cdn.com/photos/images/original/001/268/638/be0.gif]
 
 ### *Motor consistency*
 
 .center[
-![:scale 65%](https://img.izismile.com/img/img11/20180816/gifs/daily_gifdump_2884_03.gif)
+![:scale 65%](https://i.kym-cdn.com/photos/images/original/001/268/638/be0.gif)
 ]
 
 ---
 
-## Four characteristics of motor skills
+## Four .grey[characteristics] of motor skills
 
 .footnote[Source: https://wp.usatodaysports.com/wp-content/uploads/sites/90/2013/08/tiger.gif]
 
@@ -210,6 +217,14 @@ Component parts of a skill that are **observable and measurable**
 
 .center[
 ![:scale 65%](https://wp.usatodaysports.com/wp-content/uploads/sites/90/2013/08/tiger.gif)
+]
+
+---
+
+## The performance of .grey[any motor skill] is influenced by the .grey[individual], the .grey[task], and the .grey[environment]
+
+.center[
+![:scale 70%](imgs/lte-intro.png)
 ]
 
 ---
@@ -241,23 +256,23 @@ background-size: contain
 .tc[
 .black[Take-home message:
 
-There are some foundational terms and concepts in the study of motor behaviour terms that often get used incorrectly in both everyday life and professional sports.
+There are some foundational terms and concepts in the study of motor behaviour that often get used incorrectly in both everyday life and professional sports.
 ]]]
 
 ---
 
-class: title-slide-final, middle
+class: title-slide-final, middle, center
 background-image: url(https://raw.githubusercontent.com/cartermaclab/mackin-xaringan/main/imgs/logos/mcmaster-stack-color.png)
 background-size: 95px
 background-position: 9% 15%
 
 # What questions do you have?
 
-<br>
+![:scale 30%](imgs/questions.png)
+
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="mailto:michaelcarter@mcmaster.ca">.mackinred[<i class="fa fa-paper-plane fa-fw"></i>]                         | michaelcarter@mcmaster.ca                 |
 | <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
 | <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
 | <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
