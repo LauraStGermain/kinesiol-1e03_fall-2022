@@ -27,7 +27,12 @@ library(tidyverse)
 ```
 
 ```{r xaringanExtra, echo = FALSE}
-xaringanExtra::use_xaringan_extra(c("freezeframe", "tachyons"))
+xaringanExtra::use_xaringan_extra(c("clipboard",
+                                    "freezeframe",
+                                    "panelset",
+                                    "scribble",
+                                    "tachyons", 
+                                    "tile_view"))
 ```
 
 
