@@ -1,5 +1,5 @@
 ---
-title: "Skill classification"
+title: "Motor skills: Classification systems"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
 author: "Mike Carter"
 date: "Fall 2021 Week 1 </br> Lecture 2"
