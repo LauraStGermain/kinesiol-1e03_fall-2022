@@ -27,7 +27,12 @@ library(tidyverse)
 
 
 ```{r xaringanExtra, echo=FALSE}
-xaringanExtra::use_xaringan_extra(c("freezeframe", "tachyons"))
+xaringanExtra::use_xaringan_extra(c("clipboard",
+                                    "freezeframe",
+                                    "panelset",
+                                    "scribble",
+                                    "tachyons", 
+                                    "tile_view"))
 ```
 
 class: title-slide-section-gold, bottom
@@ -110,7 +115,7 @@ ggplot2::ggplot(ret_trans, aes(x = block, y = score, group = group)) +
     axis.title = element_text(face = "bold", size = 20),
     axis.text = element_text(size = 18),
     strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
-    strip.background = element_rect(color = "#272822", fill = "#5e6a71", size = 2, linetype = "solid")
+    strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
   )
 ```
 
@@ -706,12 +711,11 @@ background-position: 9% 15%
 
 # What questions do you have?
 
-<br><br><br>
+![:scale 30%](imgs/questions.png)
+
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="mailto:michaelcarter@mcmaster.ca">.mackinred[<i class="fa fa-paper-plane fa-fw"></i>]                         | michaelcarter@mcmaster.ca                 |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | cartermaclab.org                        |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
 | <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
 | <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
-
