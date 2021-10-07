@@ -1,0 +1,48 @@
+---
+title: |
+    \vspace{-2em}Homework assignment 2
+subtitle: "KINESIOL 1E03 - Motor control and learning"
+author: |
+    \textcolor{maroon}{\textbf{Due date: Oct 8 2021 by 23:59 EST}}
+output: hrbrthemes::ipsum_pdf
+header-includes:
+    \usepackage[sfdefault,condensed]{roboto}
+    \usepackage[T1]{fontenc}
+    \setlength{\headheight}{38.5pt}
+    \usepackage{xcolor}
+    \usepackage{float}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancypagestyle{plain}{\pagestyle{fancy}}
+    \fancyhead[L]{\includegraphics[width=2in,height=2in]{../../outline/mackin-left-color.png}}
+    \fancyhead[R]{Assignment 2 instructions (Fall 2021)}
+    \definecolor{maroon}{HTML}{7a003c}
+mainfont: RobotoCondensed
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  dev = "cairo_pdf")
+```
+
+# Scenario
+
+You work at a company that specializes in *smart* prosthetics and neurorehabilitation.[^1] Your boss has made you the lead scientist to work with a 45 year old woman that has recently been fitted with your newest prosthetic. The woman is most interested in being able to regain her independence with activities of daily living, such as drinking from a bottle and brushing her teeth. During your first session, you've decided to focus on drinking water from a plastic bottle.
+
+[^1]: Check out this video highlighting this amazing area of research: https://youtu.be/GgTwa3CPrIE
+
+# Questions
+
+1. Outline the different types of sensory feedback that would typically be used in this task. \textcolor{maroon}{\textbf{[3 marks]}}
+
+2. Will the absence of tactile and proprioceptive feedback affect her movements? In your answer be sure to explain why or why not? \textcolor{maroon}{\textbf{[3 marks]}}
+
+3. Provide an example strategy that the woman might use to compensate for the initial lack of sensory feedback to help her re-learn this task. Why would this strategy be effective? \textcolor{maroon}{\textbf{[4 marks]}}
+
+# Submission guidelines
+
+Your answers to the homework assignment questions should be typed and submitted via Avenue as a **PDF** file. Late assignments will be penalized 20% per day.
+
+The file you submit must include your last name, first initial, and student ID using the following format: `a2_last-initial_ID.pdf`. For instance, I would submit an assignment named: `a2_carter-m_3351871.pdf`. Files submitted in the wrong format (e.g., Microsoft Turd's `.docx`) **will not be marked**.
+
+Be sure to submit your file to the correct folder. Files submitted to the wrong folder **will not be marked**. If you need to resubmit your file to the correct folder after the due date, it will be considered late.
