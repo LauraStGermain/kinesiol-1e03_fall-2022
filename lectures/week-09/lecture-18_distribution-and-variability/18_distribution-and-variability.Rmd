@@ -1,7 +1,7 @@
 ---
 title: "Distribution and variability of practice"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Mike Carter"
+author: "Brad McKay"
 date: "Fall 2021 Week 9 </br> Lecture 18"
 output:
   xaringan::moon_reader:
@@ -334,10 +334,10 @@ ggplot2::ggplot(distribution_between, aes(x = sessions, y = score, group = group
 
 class: middle
 
-background-image: url(https://www.aubreydaniels.com/sites/default/files/xDr.,P20Ericsson,P20and,P20deliberate,P20practice.jpg.pagespeed.ic.tjNXW0Bgyr.jpg)
+background-image: url(https://www.aubreydaniels.com/sites/default/files/Dr.%20Ericsson%20and%20deliberate%20practice.jpg)
 background-size: contain
 
-.footnote[Source: https://www.aubreydaniels.com/sites/default/files/xDr.,P20Ericsson,P20and,P20deliberate,P20practice.jpg.pagespeed.ic.tjNXW0Bgyr.jpg]
+.footnote[Source: https://www.aubreydaniels.com/sites/default/files/Dr.%20Ericsson%20and%20deliberate%20practice.jpg]
 
 <br><br><br><br><br>
 ## *Q: How should you practice <br /> basketball free throws?*
@@ -625,12 +625,8 @@ background-position: 9% 15%
 
 # What questions do you have?
 
-![:scale 30%](imgs/questions.png)
-
-
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
 | <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
-
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @bradmckay8                         |
+| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @MotorMeta                           |
