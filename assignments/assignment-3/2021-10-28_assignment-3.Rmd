@@ -1,0 +1,41 @@
+---
+title: |
+    \vspace{-2em}Homework assignment 3
+subtitle: "KINESIOL 1E03 - Motor control and learning"
+author: |
+    \textcolor{maroon}{\textbf{Due date: Oct 29 2021 by 23:59 EST}}
+output: hrbrthemes::ipsum_pdf
+header-includes:
+    \usepackage[sfdefault,condensed]{roboto}
+    \usepackage[T1]{fontenc}
+    \setlength{\headheight}{38.5pt}
+    \usepackage{xcolor}
+    \usepackage{float}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancypagestyle{plain}{\pagestyle{fancy}}
+    \fancyhead[L]{\includegraphics[width=2in,height=2in]{../../outline/mackin-left-color.png}}
+    \fancyhead[R]{Assignment 3 instructions (Fall 2021)}
+    \definecolor{maroon}{HTML}{7a003c}
+mainfont: RobotoCondensed
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  dev = "cairo_pdf")
+```
+
+# Questions
+
+1. Consider the task of stick-handling while skating, as well as passing and shooting a puck while playing ice hockey. Outline how the stages of learning might proceed in this scenario according to:
+
+    a) Fitts' model of skill acquisition \textcolor{maroon}{\textbf{[5 marks]}}
+    b) Bernstein's model of skill acquisition \textcolor{maroon}{\textbf{[5 marks]}}
+
+# Submission guidelines
+
+Your answers to the homework assignment questions should be typed and submitted via Avenue as a **PDF** file. Late assignments will be penalized 20% per day.
+
+The file you submit must include your last name, first initial, and student ID using the following format: `a3_last-initial_ID.pdf`. For instance, I would submit an assignment named: `a3_carter-m_3351871.pdf`. Files submitted in the wrong format (e.g., Microsoft Turd's `.docx`) **will not be marked**.
+
+Be sure to submit your file to the correct folder. Files submitted to the wrong folder **will not be marked**. If you need to resubmit your file to the correct folder after the due date, it will be considered late.
