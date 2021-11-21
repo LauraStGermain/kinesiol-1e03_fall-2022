@@ -28,18 +28,12 @@ knitr::opts_chunk$set(echo = TRUE,  dev = "cairo_pdf")
 
 # Instructions
 
-Broadly speaking, we can divide the research process into a data collection phase and a dissemination phase. In motor control and learning, the data collection phase often requires creating and programming a task to get some answers to your interesting research question, whereas the dissemination phase involves writing up your findings and submitting a manuscript for peer review. (Watch out for pesky Reviewer 2!) For this project, you will take on the role of *motor behaviour researcher*. Given the *"capstone"*-like nature of this project, the emphasis is multifaceted but a key focus is on self-directed learning and successful collaboration. **This project must be completed in teams of 3 to 4 students**. Choose and complete one of the two options below this project. 
+Broadly speaking, we can divide the research process into a data collection phase and a dissemination phase. In motor control and learning, the data collection phase often requires creating and programming a task to get some answers to your interesting research question, whereas the dissemination phase involves writing up your findings and submitting a manuscript for peer review. (Watch out for pesky Reviewer 2!) For this project, you will take on the role of *motor behaviour researcher*. Given the *"capstone"*-like nature of this project, the emphasis is multifaceted but a key focus is on self-directed learning and successful collaboration. **This project must be completed in teams of 4 to 5 students**. Choose and complete one of the two options below this project. 
 
 
 # Option 1: Program a motor control task
 
-Motor control researchers rely on a variety of different tools for this but a good beginner option is PsychoPy. Select a motor control task from the following list:
-
-- Hick's Law
-- Stimulus-response compatibility
-- Simon effect
-- Psychological refractory period
-- Probe reaction time task
+Motor control researchers rely on a variety of different tools for this but a good beginner option is PsychoPy. Select one of the following motor tasks: a) Hick's Law; b) Stimulus-response compatibility; c) Simon effect; d) Psychological refractory period; or e) Probe reaction time task.
 
 Once you have picked a task, you will need to download PsychoPy: https://www.psychopy.org/download.html. You can also check out their Getting Started page: https://psychopy.org/gettingStarted.html and their YouTube channel for tutorials: https://www.youtube.com/user/peircej/videos.
 
@@ -47,7 +41,7 @@ There are four components that your team must complete for this option:
 
 1. Program your selected task in PsychoPy
 2. Each team member should complete the task as if they were a participant in an experiment
-3. Write a methods section for the task you created (800 to 1200 words)
+3. Write a methods section for the task you created **(3-4 pages, double-spaced, 12pt font, APA format)**
     - Describe the task and equipment used and the procedure (i.e., steps involved in completing your task)
 4. Using the data that is saved by your program for each team member, create a graphical display of the data (similar to what was shown in lecture)
 
@@ -62,9 +56,7 @@ Be sure to submit your file to the correct folder. Files submitted to the wrong 
 
 # Option 2: Write a motor learning journal article
 
-You and your team run an applied motor learning lab. As a team, decide whether you specialize in sport specific skills or in movement/motor disorders. Next, choose a motor skill and a condition of practice. You can choose one discussed in lecture or one that we did not have time to cover (see the supplementary textbook). Now, you and your team must design a motor learning experiment to investigate the effectiveness of your training intervention for your selected motor skill.
-
-Your team will then write a mock motor learning journal article (3500 to 4000 words, not including references) that consists of the following sections:
+You and your team run an applied motor learning lab. As a team, decide whether you specialize in sport specific skills or in movement/motor disorders. Next, choose a motor skill and a condition of practice. You can choose one discussed in lecture or one that we did not have time to cover (see the supplementary textbook). Now, you and your team must design a motor learning experiment to investigate the effectiveness of your training intervention for your selected motor skill. Your team will then write a mock motor learning journal article **(10-12 pages, not including references, double-spaced, 12pt font, APA format)** that consists of the following sections:
 
 1. Introduction
     - Identify the area of research and describe the problem investigated, define any key terms or concepts so your reader can understand the experiment
@@ -80,9 +72,9 @@ Your team will then write a mock motor learning journal article (3500 to 4000 wo
 4. Discussion
     - Summarize the most important findings at the beginning
     - Interpret your hypothetical results by explaining how your results relate to your hypothesis(es)
-    - Discuss how whether your findings relate to the relevant literature reviewed in your introduction (Do they agree, contradict, etc?)
+    - Discuss how your findings relate to the relevant literature reviewed in your introduction (Do they agree, contradict, etc?)
     - Describe the practical application of your hypothetical results
-5. References
+5. References (10-15 peer-reviewed journal articles)
 
 ## Submission guidelines
 
