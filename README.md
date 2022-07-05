@@ -1,4 +1,4 @@
-# Motor Control and Learning (KINESIOL 1E03 at McMaster University)
+# KINESIOL 1E03 - Motor Control and Learning
 
 ## Course description
 
