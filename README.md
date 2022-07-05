@@ -68,7 +68,7 @@ This course is delivered using a module approach. Module 1 covers Motor Control 
 <sup>a</sup>This lecture has been moved from the original schedule. As a result, the lecture on *Classes of control* has been removed. An overview of the content from the *Classes of control* lecture will be presented in the *Action preparation: Information-processing* lecture. You can, however, access the slides for the *Classes of control* lecture [here][8].
 
 ## Acknowledgments
-Content for this course, in one shape or another, has come from a variety of people over the years. Thanks to Dr. Jae Patterson (Brock University), Dr. Diane Ste-Marie (uOttawa), Dr. Tony Carlsen (uOttawa), Dr. Dana Maslovat (Langara College), Dr. Erin Cressman (uOttawa), Dr. Tyler Cluff (University of Calgary).
+Content for this course, in one shape or another, has been influenced from a variety of people over the years. Thanks to Dr. Jae Patterson (Brock University), Dr. Diane Ste-Marie (uOttawa), Dr. Tony Carlsen (uOttawa), Dr. Dana Maslovat (Langara College), Dr. Erin Cressman (uOttawa), Dr. Tyler Cluff (University of Calgary).
 
 [0]:https://cartermaclab.github.io/kinesiol-1e03/lectures/week-00/lecture-00_welcome/00_course-welcome.html
 [1]:https://cartermaclab.github.io/kinesiol-1e03/lectures/week-00/lecture-01_motor-skills-fundamentals/01_motor-skills-fundamentals.html
