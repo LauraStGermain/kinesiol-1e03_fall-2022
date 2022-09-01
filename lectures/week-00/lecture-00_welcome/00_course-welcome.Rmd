@@ -270,6 +270,7 @@ Questions to ask yourself before you contact me:
 
 If you've taken these steps and still need support, email me!]
 
+--
 
 .pull-right[**Expectations of me**  
 - Unless I am out of office, you can expect to hear back from me within 2 business day
@@ -285,7 +286,7 @@ If you've taken these steps and still need support, email me!]
     - Mondays 10:30-11:30
     - Wednesdays 11:00-12:00
     
-- This is a great opportunity to ask content-related questions or get support
+- This is a great opportunity to ask content-related questions and get support
 
 - There must be mutual respect between students and instructor 
 
@@ -344,6 +345,8 @@ kbl(eval,
     - Thursday: short answer
 
 - Tests will be 40 minutes long
+
+- Some students will write tests in a different building, make sure to check Announcements on Avenue and listen to instructions in lecture
 
 ---
 
@@ -448,6 +451,6 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @_LauraStGermain                         |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
