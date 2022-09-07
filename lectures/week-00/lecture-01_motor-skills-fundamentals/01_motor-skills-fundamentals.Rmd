@@ -48,7 +48,7 @@ xaringanExtra::use_xaringan_extra(c("clipboard",
 
 1. Define and distinguish the terms **skills/actions**, **abilities**, **movements**, and **reflexes**, and give examples of each.
 
-2. Identify and describe **three influences** on how we perform a motor skill.
+2. Identify and describe **four influences** on how we perform a motor skill.
 
 3. Define and distinguish **four characteristics** of motor skills.
 
@@ -273,7 +273,7 @@ background-size: contain
 
 1. Define and distinguish the terms **skills/actions**, **abilities**, **movements**, and **reflexes**, and give examples of each.
 
-2. Identify and describe **three influences** on how we perform a motor skill.
+2. Identify and describe **four influences** on how we perform a motor skill.
 
 3. Define and distinguish **four characteristics** of motor skills.
 
