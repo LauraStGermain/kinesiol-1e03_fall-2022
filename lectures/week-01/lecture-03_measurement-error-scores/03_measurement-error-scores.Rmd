@@ -21,12 +21,12 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r additional, echo = FALSE}
+```{r additional, echo = FALSE, include = FALSE}
 library(kableExtra)
 library(tidyverse)
 ```
 
-```{r xaringanExtra, echo = FALSE}
+```{r xaringanExtra, echo = FALSE, include = FALSE}
 xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "freezeframe",
                                     "panelset",
@@ -220,7 +220,7 @@ result for each trial is shown below:
 
 ---
 
-## Constant error measures the .grey[average error] in responding
+## Constant error measures the .grey[bias] in responding
 
 .center[
 ![](imgs/error-score-1.png)
