@@ -1,7 +1,7 @@
 ---
 title: "Measurement: Error scores"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Mike Carter"
+author: "Laura St. Germain"
 date: "Fall 2021 Week 1 </br> Lecture 3"
 output:
   xaringan::moon_reader:
@@ -101,42 +101,6 @@ class: title-slide-section-gold, bottom
 class: inverse, middle, center
 
 # Any questions?
-
----
-
-.pull-left[
-> ~~Sept 7 | Welcome~~  
-> ~~Sept 9 | Motor skills: Fundamentals~~
-
-<br>
-> ~~Sept 13 | Motor skills: Classification~~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~~systems~~  
-> Sept 14 | Measurement: Error scores  
-> Sept 16 | **HW Assignment 1**
-
-<br>
-> Sept 20 | .blue[Project Week]
-
-<br>
-> Sept 27 | Measurement: Reaction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time  
-> Sept 28 | Sensorimotor foundations  
-> Sept 30 | Visuomotor foundations
-
-]
-
-.pull-right[
-> Oct 4 | Classes of control  
-> Oct 5 | Action preparation: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information-processing  
-> Oct 7 | **HW Assignment 2**
-
-<br>
-> Oct 11 | .black[Reading Week]
-
-<br>
-> Oct 18 | Action preparation: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compatibility and complexity  
-> Oct 19 | Action execution: Attention &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and coordination  
-> Oct 19 | Action execution: Speed and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;accuracy 
-
-]
 
 ---
 
@@ -565,6 +529,6 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
