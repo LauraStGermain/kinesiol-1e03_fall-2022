@@ -60,6 +60,18 @@ class: title-slide-section-gold, bottom
 
 ---
 
+## Characteristics of .grey[skilled performance]
+
+1. Maximum certainty of goal attainment
+
+2. Minimum energy expenditure
+
+3. Minimum movement time
+
+4. Maximum adaptability
+
+---
+
 ## Four characteristics of motor skills
 
 1. Motor equivalence
