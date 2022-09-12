@@ -3,7 +3,7 @@
   <head>
     <title>Measuring performance: Reaction time</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Mike Carter" />
+    <meta name="author" content="Laura St. Germain" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/mackin.css" rel="stylesheet" />
     <link href="libs/remark-css/mackin-fonts.css" rel="stylesheet" />
@@ -31,10 +31,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Measuring performance: Reaction time
+]
+.subtitle[
 ## KINESIOL 1E03 - Motor control and learning
-### Mike Carter
-### Fall 2021 Week 3 </br> Lecture 5
+]
+.author[
+### Laura St. Germain
+]
+.date[
+### Fall 2021 Week 1 </br> Lecture 4
+]
 
 ---
 
@@ -583,9 +591,9 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| &lt;a href="https://cartermaclab.org"&gt;.mackinred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]                                       | www.cartermaclab.org                        |
-| &lt;a href="https://twitter.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]                          | @cartermaclab                         |
-| &lt;a href="https://github.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]                              | @cartermaclab                           |
+| &lt;a href="https://twitter.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]                     | @_LauraStGermain                  |
+| &lt;a href="https://github.com/LauraStGermain"&gt;.mackinred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]                     | @LauraStGermain                   |
+| &lt;a href="https://cartermaclab.org"&gt;.mackinred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]                                | www.cartermaclab.org              |
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -635,6 +643,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
