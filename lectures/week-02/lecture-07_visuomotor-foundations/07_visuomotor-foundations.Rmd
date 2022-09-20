@@ -1,8 +1,8 @@
 ---
 title: "Visuomotor foundations"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Mike Carter"
-date: "Fall 2021 Week 4 </br> Lecture 7"
+author: "Laura St. Germain"
+date: "Fall 2021 Week 2 </br> Lecture 6"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -17,16 +17,16 @@ output:
       in_header: "../../../libs/partials/header.html"
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include = FALSE, include = FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r additional, echo = FALSE}
+```{r additional, echo = FALSE, include = FALSE}
 library(kableExtra)
 library(tidyverse)
 ```
 
-```{r xaringan, echo = FALSE}
+```{r xaringan, echo = FALSE, include = FALSE}
 xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "freezeframe",
                                     "panelset",
@@ -214,6 +214,8 @@ Sensory feedback is critical for skilled voluntary actions.
 - Provide greater discernment concerning **movement** in visual field
 ]
 
+--
+
 .pull-right[
 .black[Cones]
 - ~6-7 million in each eye and predominantly found in the **fovea**
@@ -269,8 +271,6 @@ Sensory feedback is critical for skilled voluntary actions.
 - The part outside the macula (~95% of total retinal area) is **peripheral retina**
 
 - Vision mediated by the peripheral retina is called **peripheral vision**
-
-- The **parafoveal retina** lies between the fovea and peripheral retina
 ]
 
 .pull-right[.center[
