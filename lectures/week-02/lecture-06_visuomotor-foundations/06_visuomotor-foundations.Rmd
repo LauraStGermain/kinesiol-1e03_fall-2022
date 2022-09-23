@@ -35,6 +35,16 @@ xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "tile_view"))
 ```
 
+## Announcements
+
+- Next week's schedule:
+    - Monday: In-class office hours
+    - Tuesday: Multiple choice portion of test
+    - Thursday: Fill in the blank and short answer portion of test
+    
+- Students whose names begin with the letters **N-Z** will be writing in building **T13** room **123** on BOTH DAYS
+
+---
 
 class: title-slide-section-gold, bottom
 
@@ -68,25 +78,6 @@ class: title-slide-section-gold, bottom
 
 background-image: url(imgs/reaching-velocity-profiles.png)
 background-size: contain
-
----
-
-## Muscle spindle afferent endings are sensitive to .grey[muscle length] and .grey[speed] of muscle lengthing
-
-.footnote[Fig: Tresilian 2012]
-
-.pull-left[
-- The muscle spindle is **elastic** and is lengthened (stretched) or shortened as the muscle in which it is embedded lengthens or shortens
-
-- Muscle spindles are innervated by **Type Ia** and **Type II** afferents
-
-- An extrafusal fibre can typically generate 30 to 40 times as much force as an intrafusal fibre
-
-]
-
-.pull-right[.center[
-![](imgs/spindle.png)
-]]
 
 ---
 
