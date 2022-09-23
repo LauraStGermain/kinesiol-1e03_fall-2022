@@ -1,39 +1,55 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Classes of control</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Laura St. Germain" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/mackin.css" rel="stylesheet" />
+    <link href="libs/remark-css/mackin-fonts.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Classes of control
+]
+.subtitle[
+## KINESIOL 1E03 - Motor control and learning
+]
+.author[
+### Laura St. Germain
+]
+.date[
+### Fall 2022 Week 4 </br> Lecture 7
+]
+
 ---
-title: "Classes of control"
-subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Laura St. Germain"
-date: "Fall 2022 Week 4 </br> Lecture 7"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    css: ["mackin", "mackin-fonts"]
-    nature:
-      beforeInit: ["../../../js/mackin-xaringan.js"]
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: "16:9"
-    includes:
-      in_header: "../../../libs/partials/header.html"
----
 
-```{r setup, include = FALSE}
-options(htmltools.dir.version = FALSE)
-```
 
-```{r additional, echo = FALSE, include = FALSE}
-library(kableExtra)
-library(tidyverse)
-```
 
-```{r xaringanExtra, echo = FALSE, include = FALSE}
-xaringanExtra::use_xaringan_extra(c("clipboard",
-                                    "freezeframe",
-                                    "panelset",
-                                    "scribble",
-                                    "tachyons", 
-                                    "tile_view"))
-```
+
+
+
+
 
 
 class: title-slide-section-gold, bottom
@@ -84,7 +100,7 @@ background-size: 45%
 
 ## What are the .grey[functions] of the two visual streams?
 
-.footnote[Fig: Tresilian 2012; Goodle & Milner 1992]
+.footnote[Fig: Tresilian 2012; Goodle &amp; Milner 1992]
 
 .pull-left[
 We can **distinguish** the two streams based on the **use to which the information is put**
@@ -138,7 +154,7 @@ class: inverse, middle, center
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
-.black[<ins>Take-home message</ins>:
+.black[&lt;ins&gt;Take-home message&lt;/ins&gt;:
 
 Some actions allow us to use sensory feedback to make online corrections whereas other actions leave little time for corrections based on sensory feedback.
 ]]]
@@ -153,7 +169,7 @@ We have discussed two sources of information that help us control our actions:
 
 2. Exteroceptive information (e.g., vision)
 
-<br>
+&lt;br&gt;
 
 .black[CLOSED-LOOP CONTROL]: a class of control in which, **during** the course of an action, feedback is **compared** against a standard (or reference) to enable an action to be carried out as planned
 
@@ -167,7 +183,7 @@ We have discussed two sources of information that help us control our actions:
 
 - A block diagram represents a system as something that produces outputs in response to inputs
 
-<br>
+&lt;br&gt;
 .center[
 ![](imgs/io-box.png)
 ]
@@ -197,15 +213,15 @@ We have discussed two sources of information that help us control our actions:
 
 ## A control system is a .grey[set of components that work together] to achieve control
 
-.footnote[<sup>1</sup>A commonly used alternative name is **plant**]
+.footnote[&lt;sup&gt;1&lt;/sup&gt;A commonly used alternative name is **plant**]
 
-.black[CONTROLLED SYSTEM]<sup>1</sup>: a system that is being **controlled** (having inputs applied to it) to make it **behave** in a way that meets the requirement(s)
+.black[CONTROLLED SYSTEM]&lt;sup&gt;1&lt;/sup&gt;: a system that is being **controlled** (having inputs applied to it) to make it **behave** in a way that meets the requirement(s)
 
 .black[CONTROLLER]: a system that **generates** the control inputs that **affect the behaviour** of the controlled system (usually through actuating systems)
 
 .black[CONTROL SYSTEM]: a system comprised of a controller, a controlled system, and possibly other components that **work together to achieve some required behaviour**
 
-<br>
+&lt;br&gt;
 .center[
 ![](imgs/control-system.png)
 ]
@@ -328,7 +344,7 @@ Open-loop control **requires detailed knowledge** about the controlled system
 ## What happens to .grey[muscle activity] if a target-directed reach is .grey[prevented unexpectedly]?
 
 .pull-left[.center[
-<br>
+&lt;br&gt;
 ![:scale 100%](imgs/triphasic-pattern.png)
 ]]
 
@@ -390,7 +406,7 @@ background-size: contain
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
-.black[<ins>Take-home message</ins>:
+.black[&lt;ins&gt;Take-home message&lt;/ins&gt;:
 
 Some actions allow us to use sensory feedback to make online corrections whereas other actions leave little time for corrections based on sensory feedback.
 ]]]
@@ -409,6 +425,144 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| &lt;a href="https://cartermaclab.org"&gt;.mackinred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]                                       | www.cartermaclab.org                        |
+| &lt;a href="https://twitter.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]                          | @cartermaclab                         |
+| &lt;a href="https://github.com/cartermaclab"&gt;.mackinred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]                              | @cartermaclab                           |
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="../../../js/mackin-xaringan.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
