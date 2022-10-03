@@ -1,8 +1,8 @@
 ---
 title: "Action preparation: Compatibility and complexity"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Mike Carter"
-date: "Fall 2021 Week 6 </br> Lecture 11"
+author: "Laura St. Germain"
+date: "Fall 2022 Week 4 </br> Lecture 9"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -21,12 +21,12 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r additional, echo = FALSE}
+```{r additional, echo = FALSE, include = FALSE}
 library(kableExtra)
 library(tidyverse)
 ```
 
-```{r xaringanExtra, echo = FALSE}
+```{r xaringanExtra, echo = FALSE, include = FALSE}
 xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "freezeframe",
                                     "panelset",
@@ -610,6 +610,6 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
