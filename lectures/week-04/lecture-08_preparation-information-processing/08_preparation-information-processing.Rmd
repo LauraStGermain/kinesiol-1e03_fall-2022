@@ -1,8 +1,8 @@
 ---
 title: "Action preparation: Information-processing"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Mike Carter"
-date: "Fall 2021 Week 4 </br> Lecture 9"
+author: "Laura St. Germain"
+date: "Fall 2021 Week 4 </br> Lecture 8"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -21,12 +21,12 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r additional, echo = FALSE}
+```{r additional, echo = FALSE, include = FALSE}
 library(kableExtra)
 library(tidyverse)
 ```
 
-```{r xaringanExtra, echo = FALSE}
+```{r xaringanExtra, echo = FALSE, include = FALSE}
 xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "freezeframe",
                                     "panelset",
