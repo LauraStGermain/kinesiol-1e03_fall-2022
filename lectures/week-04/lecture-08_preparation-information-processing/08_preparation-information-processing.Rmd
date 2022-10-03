@@ -44,14 +44,6 @@ class: title-slide-section-gold, bottom
 
 ## There are .grey[two basic control systems] that guide action
 
-We have discussed two sources of information that help us control our actions:
-
-1. Interoceptive information (e.g., touch, proprioception)
-
-2. Exteroceptive information (e.g., vision)
-
-<br>
-
 .black[CLOSED-LOOP CONTROL]: a class of control in which, **during** the course of an action, feedback is **compared** against a standard (or reference) to enable an action to be carried out as planned
 
 .black[OPEN-LOOP CONTROL]: a class of control in which **all** the information needed to initiate and carry out an action as planned is contained in the **initial instructions** to the effectors
@@ -64,8 +56,6 @@ We have discussed two sources of information that help us control our actions:
   - Speed limit is 50 km/h
   - Your speed is 60 km/h
   - Error is -10 km/h (50 - 60)
-
-- A common alternative term for closed-loop control is **error-correcting feedback control**
 
 - Fundamental objective of this class of control is to **reduce errors to 0** or **as close to 0** as makes no practical difference
 
@@ -163,6 +153,25 @@ Although reaction time is one of the simplest performance measures, its use has 
 .center[
 ![](imgs/info-processing.png)
 ]
+
+---
+
+## A key .grey[assumption] of the information-processing model is that the stages are .grey[non-overlapping]
+
+**Stimulus Identification**
+- Primarily a sensory stage
+- A representation of the stimulus can be created which is passed into the next stage
+
+--
+
+**Response selection**
+- A decision has to be made about what response to make, given the nature of the stimulus
+- This stage may be by-passed
+
+--
+
+**Response programming**
+- The motor system must be organized to make the desired action
 
 ---
 
@@ -284,7 +293,7 @@ background-size: cover
 
 ---
 
-## Reaction time .grey[increases] with the number of stimulus-response alternatives
+## Reaction time .grey[increases] with the number of stimulus-response alternatives 
 
 .footnote[Approximate data from Merkel 1885 through plot digitization]
 
@@ -340,7 +349,7 @@ ggplot2::ggplot(merkel, aes(x = choices, y = rt)) +
 
 ---
 
-## The number of choice and reaction time can be capture with a .grey[log-linear] equation
+## The number of choice and reaction time can be capture with a .grey[log-linear] equation (i.e., .black[Hick's Law])
 
 .pull-left[
 ### $RT = a + b\log_{2}(N)$
@@ -417,17 +426,6 @@ background-size: contain
 
 ---
 
-class: title-slide-section-gold, middle
-
-# *Let's return to our traffic lights...*
-
----
-
-background-image: url(imgs/better-traffic-lights.png)
-background-size: cover
-
----
-
 # Learning objectives
 
 1. Identify and describe the **3 stages** of information-processing.
@@ -459,6 +457,6 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
