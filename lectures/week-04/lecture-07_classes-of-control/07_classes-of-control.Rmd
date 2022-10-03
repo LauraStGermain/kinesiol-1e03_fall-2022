@@ -70,18 +70,6 @@ background-size: 45%
 
 ---
 
-## Animals with foveate eyes have .grey[4 systems] to bring images onto the foveas and hold them there
-
-1. **Saccadic system**: rapidly shift gaze from one location in the visual field to another (Movement type = conjugate)
-
-2. **Fixation system**: maintain the direction of gaze so that the images of an object remain on the foveas (Movement type = variable)
-
-3. **Smooth pursuit system**: shift gaze so that the images of a laterally moving object remain on the foveas (Movement type = conjugate)
-
-4. **Vergence system**: align the eyes so that images of an object fall on corresponding foveal locations in the two eyes (Movement type = disconjugate)
-
----
-
 ## What are the .grey[functions] of the two visual streams?
 
 .footnote[Fig: Tresilian 2012; Goodle & Milner 1992]
@@ -154,6 +142,8 @@ We have discussed two sources of information that help us control our actions:
 2. Exteroceptive information (e.g., vision)
 
 <br>
+
+--
 
 .black[CLOSED-LOOP CONTROL]: a class of control in which, **during** the course of an action, feedback is **compared** against a standard (or reference) to enable an action to be carried out as planned
 
@@ -409,6 +399,6 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
