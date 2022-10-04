@@ -133,16 +133,18 @@ Information is related to **uncertainty** and the amount of uncertainty **reduce
 
 ---
 
-## Meet .grey[Cooper]<sup>1</sup>...the MAClab puggle
+## Meet .grey[Ginger]<sup>1</sup>...the MAClab mutt
 
-.footnote[<sup>1</sup>Voted the **cutest dog** of the lab 5 years in a row]
+.footnote[<sup>1</sup>Voted the **cutest dog** of the lab 2022]
 
 .pull-left[.center[
-![:scale 68%](imgs/cooper-1.png)
+![:scale 50%](imgs/ginger-1.JPG)
 ]]
 
+--
+
 .pull-right[.center[
-![:scale 85%](imgs/cooper-2.png)
+![:scale 50%](imgs/ginger-3.jpg)
 ]]
 
 ---
