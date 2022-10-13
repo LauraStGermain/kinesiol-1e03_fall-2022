@@ -294,9 +294,7 @@ background-size: cover
 
 2. Describe the **spatial** and **anatomical** accounts for stimulus-response compatibility effects in the lab.
 
-3. Discuss the how an **irrelevant** stimulus feature can influence action preparation.
-
-4. Explain how response **complexity** influences action preparation.
+3. Explain how response **complexity** influences action preparation.
 --
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
@@ -411,6 +409,14 @@ ggplot2::ggplot(normal_hands, aes(x = response, y = rt, group = stimulus, color 
 
 ---
 
+## How can we .grey[dissociate] between the spatial and anatomical explanations?
+
+.center[
+![:scale 55%](imgs/dissociate-label.png)
+]
+
+---
+
 ## Which explanation is .grey[supported] by this data?
 
 .footnote[*Hypothetical data for illustrative purposes*]
@@ -466,63 +472,6 @@ ggplot2::ggplot(crossed_hands, aes(x = response, y = rt, group = stimulus, color
 
 ---
 
-## What is the .grey[spatial locations] of the stimuli are .grey[not relevant] to the task?
-
-.center[
-![:scale 70%](imgs/simon-setup.png)
-]
-
----
-
-## A compatibility effect occurs even when stimulus location is .grey[irrelevant] to the task?
-
-.footnote[Approximate data from Simon and Ruddell 1967 through plot digitization]
-
-```{r echo=FALSE}
-# Create tibble of hypothetical Simon effect data
-simon <- tibble::tibble(
-  stimulus = c("Press left key", "Press left key", "Press right key", "Press right key"),
-  ear = c("Left", "Right", "Left", "Right"),
-  rt = c(384.96, 424.11, 433.32, 390.43)
-)
-```
-
-```{r echo=FALSE, fig.align='center', fig.width=12, fig.height=6}
-ggplot2::ggplot(simon, aes(x = ear, y = rt, group = stimulus, color = stimulus, shape = stimulus)) +
-  geom_line(size = 1.5, linetype = "dotted") +
-  geom_point(size = 5) +
-  scale_y_continuous(name = "Reaction time (ms)",
-                     limits = c(250, 500),
-                     breaks = seq(250, 500, 25)) +
-  scale_x_discrete(name = "Ear presented with message") +
-  scale_color_manual(values = c("#ac1455", "#fdbf57")) +
-  theme(
-    legend.text = element_text(size = 18),
-    legend.title = element_blank(),
-    axis.title = element_text(face = "bold", size = 20),
-    axis.text = element_text(size = 18)
-  )
-```
-
----
-
-## Why does this .grey[irrelevant] feature influence reaction time?
-
-.center[
-![:scale 95%](imgs/simon-interference.png)
-]
-
----
-
-class: inverse
-
-background-image: url(https://mycardoeswhat.org/wp-content/uploads/2017/01/ABS-Snow.jpg)
-background-size: contain
-
-.footnote[Source: https://mycardoeswhat.org/wp-content/uploads/2017/01/ABS-Snow.jpg]
-
----
-
 ## We can increase the .grey[complexity] of an action by .grey[increasing] the number of components to execute
 
 .pull-left[
@@ -571,25 +520,13 @@ ggplot2::ggplot(complexity, aes(x = task, y = rt)) +
 
 ---
 
-## Reaction time .grey[increases] with response complexity
-
-.footnote[Maslovat et al. 2019 (https://doi.org/10.1016/j.neulet.2019.03.056)]
-
-.center[
-![:scale 67%](imgs/maslovat-etal.png)
-]
-
----
-
 # Learning objectives
 
 1. Describe what is meant by stimulus-response **compatibility** and how it affects action preparation.
 
 2. Describe the **spatial** and **anatomical** accounts for stimulus-response compatibility effects in the lab.
 
-3. Discuss the how an **irrelevant** stimulus feature can influence action preparation.
-
-4. Explain how response **complexity** influences action preparation.
+3. Explain how response **complexity** influences action preparation.
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
