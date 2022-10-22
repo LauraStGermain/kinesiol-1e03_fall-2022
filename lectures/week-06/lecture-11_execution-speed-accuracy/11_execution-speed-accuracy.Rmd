@@ -38,7 +38,7 @@ xaringanExtra::use_xaringan_extra(c("clipboard",
 
 class: title-slide-section-gold, bottom
 
-# Review from last lecture
+# Review and finishing up last lecture
 
 ---
 
@@ -58,60 +58,25 @@ class: title-slide-section-gold, bottom
 
 ---
 
-## We can use a .grey[probe reaction time task] to gauge the attention demands of an action
+.footnote[Source: https://youtu.be/ZaaK36mX_Pk]
 
-.footnote[*Approximate data from Posner and Keele 1969 through plot digitization*]
-
-.pull-left[
-**Primary task**
-- Reach to a target (small or large)
-
-**Secondary task**
-- Simple reaction time task of pressing a button as quickly as possible whenever you hear an auditory tone
-
-The auditory probe could be **presented randomly** at **6 possible positions** in the movement: 0, 15, 45, 75, 105, or 135 degrees
-]
-
-.pull-right[
-```{r echo=FALSE}
-# Create tibble of digitized Posner & Keele 1969 data
-probe_rt <- tibble::tibble(
-  position = c(0, 15, 45, 75, 105, 135, 0, 15, 45, 75, 105, 135),
-  target = c(rep("Small target", 6), rep("Large target", 6)),
-  rt = c(457.64, 374.66, 352.61, 329.98, 346.81, 393.23, 444.29, 330.56, 313.15, 292.84, 299.81, 327.66)
-)
-```
-
-```{r echo=FALSE, fig.align='center', fig.height=5.75}
-ggplot2::ggplot(probe_rt, aes(x = position, y = rt, group = target, color = target, shape = target)) +
-  geom_line(aes(linetype = target), size = 1) +
-  geom_point(size = 4) +
-  scale_y_continuous(name = "Reaction time (ms)",
-                     limits = c(200, 500),
-                     breaks = seq(200, 500, 50)) +
-  scale_x_continuous(name = "Position in movement (degs)",
-                     limits = c(0, 135),
-                     breaks = c(0, 15, 45, 75, 105, 135)) +
-  scale_color_manual(values = c("#ac1455", "#fdbf57")) +
-  scale_linetype_manual(values = c(1, 2)) +
-  theme(
-    legend.text = element_text(size = 18),
-    legend.title = element_blank(),
-    legend.position = c(0.8, 0.9),
-    axis.title = element_text(face = "bold", size = 20),
-    axis.text = element_text(size = 18)
-  ) +
-  geom_hline(yintercept = 258.03, size = 1) +
-  annotate(geom = "curve", x = 15, y = 225, xend = 0, yend = 250, curvature = -.3, arrow = arrow(length = unit(2, "mm"))) +
-  annotate(geom = "text", x = 16, y = 225, label = "Probe (control) RT without any movement", hjust = "left", size = 6)
-```
+.center[
+<iframe width="1050" height="575" src="https://www.youtube.com/embed/ZaaK36mX_Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
 ---
 
 ## The .grey[time between] the presentation of two stimuli can have a .grey[strong influence] on performance
 
-<br>
+.black[Task 1 alone]: **Say** a word (e.g., *"TOP"*) as quickly as possible when you **hear** an auditory cue
+
+.black[Task 2 alone]: **Press** a key with your right hand when you **see** a visual cue
+
+.black[Sequential]: Perform Task 1 **then** Task 2 but **manipulate** time **between** the auditory and visual cues
+
+---
+
+## The .grey[time between] the presentation of two stimuli can have a .grey[strong influence] on performance
 
 .center[
 ![:scale 100%](imgs/prp-setup.png)
@@ -131,6 +96,8 @@ ggplot2::ggplot(probe_rt, aes(x = position, y = rt, group = target, color = targ
 <br>
 *We need to **compare** the reaction times of **Task 2 in the sequential condition** (Task 1 then Task 2) to the **Task 2 alone** (i.e., control condition) to determine whether a **PRP** happened*
 ]
+
+--
 
 .pull-right[
 ```{r echo=FALSE}
@@ -166,16 +133,12 @@ ggplot2::ggplot(prp, aes(x = soa, y = rt)) +
 
 ---
 
-.center[
-![:scale 100%](imgs/intrinsic-patterns.png)
-]
+## The .grey[psychological refractory period] in action...
 
----
-
-## Rapid bimanual reaches .grey[with/without] an obstacle?
+.footnote[Video: https://youtu.be/WMB4k-OINM0]
 
 .center[
-![](imgs/bimanual-reach.png)
+![:scale 88%](imgs/prp-sport.png)
 ]
 
 ---
@@ -380,7 +343,7 @@ ggplot2::ggplot(fitts, aes(x = id, y = rt)) +
 ggplot2::ggplot(fitts, aes(x = id, y = rt)) +
   geom_smooth(method = "lm", color = "#272822", se = FALSE, size = 2) +
   geom_point(aes(color = target, shape = target, fill = target), size = 5) +
-  scale_y_continuous(name = "Movement time per tap (ms)",
+  scale_y_continuous(name = "Movement time per tap (s)",
                      limits = c(0.1, 0.8),
                      breaks = seq(0.1, 0.8, 0.1)) +
   scale_x_continuous(name = "Index of difficulty (ID)",
@@ -502,48 +465,6 @@ background-size: 55%
 
 ![:scale 100%](https://www.protourgolfcollege.com/uploads/5/6/1/5/5615801/522284_orig.png)
 ]]
-
----
-
-background-image: url(imgs/jones-etal.png)
-background-size: 35%
-background-position: 60% 85%
-
-## Motor variability is .grey[proportional] to the force produced
-
-.footnote[Jones et al 2002 (https://doi.org/10.1152/jn.2002.88.3.1533)]
-
-.left-column[
-.black[Instructions]: Participants are asked to **generate** and **maintain** a specific percent of their **max voluntary contraction**. As the required force level **increases**, participants show greater **variability in maintaining** the target force level.
-]
-
----
-
-## Motor variability is .grey[proportional] to the force produced
-
-.footnote[Jones et al 2002 (https://doi.org/10.1152/jn.2002.88.3.1533)]
-
-.pull-left[.center[
-![:scale 65%](imgs/jones-etal.png)
-]]
-
-.pull-right[.center[
-![:scale 90%](imgs/force-variability.png)
-]]
-
----
-
-background-image: url(imgs/scott-loeb.png)
-background-size: 26%
-background-position: 65% 85%
-
-## Proprioceptive error .grey[varies] with limb configuration
-
-.footnote[Scott and Loeb 1994 (https://doi.org/10.1523/JNEUROSCI.14-12-07529.1994)]
-
-.left-column[
-.black[Instructions]: Participants are asked to **reach** to a peripheral target with **time limit**. As movement **distance** increased, participants showed **greater variability** in the **end-point distributions** of their **reaching** movements
-]
 
 ---
 
