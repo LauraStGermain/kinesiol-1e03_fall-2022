@@ -1,8 +1,8 @@
 ---
-title: "Action execution: Attention and Coordination"
+title: "Action execution: Attention"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Mike Carter"
-date: "Fall 2021 Week 6 </br> Lecture 12"
+author: "Laura St. Germain"
+date: "Fall 2021 Week 5 </br> Lecture 10"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -21,12 +21,12 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r additional, echo = FALSE}
+```{r additional, echo = FALSE, include = FALSE}
 library(kableExtra)
 library(tidyverse)
 ```
 
-```{r xaringanExtra, echo = FALSE}
+```{r xaringanExtra, echo = FALSE, include = FALSE}
 xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "freezeframe",
                                     "panelset",
@@ -88,12 +88,21 @@ class: title-slide-section-gold, bottom
 ## How can we .grey[dissociate] between the spatial and anatomical explanations?
 
 .center[
-![:scale 68%](imgs/dissociate.png)
+![:scale 50%](imgs/dissociate-label.png)
 ]
 
 ---
 
 ## Which explanation is .grey[supported] by this data?
+
+```{r echo=FALSE}
+# Create tibble of hypothetical normal hands S-R compatibility data
+normal_hands <- tibble::tibble(
+  stimulus = c("Left stimulus", "Left stimulus", "Right stimulus", "Right stimulus"),
+  response = c("Left key", "Right key", "Left key", "Right key"),
+  rt = c(325, 380, 382, 331)
+)
+```
 
 .footnote[*Hypothetical data for illustrative purposes*]
 
@@ -148,16 +157,6 @@ ggplot2::ggplot(crossed_hands, aes(x = response, y = rt, group = stimulus, color
 
 ---
 
-## Reaction time .grey[increases] with response complexity
-
-.footnote[Maslovat et al. 2019 (https://doi.org/10.1016/j.neulet.2019.03.056)]
-
-.center[
-![:scale 67%](imgs/maslovat-etal.png)
-]
-
----
-
 class: inverse, middle, center
 
 # Any questions?
@@ -191,15 +190,13 @@ William James 1890
 
 2. Describe how researchers can **assess** the attention demands of performing a motor skill and how attention **may limit** information-processing activities during task performance.
 
-3. Describe the difference between **symmetric** and **asymmetric** bimanual coordination and discuss why asymmetric is **more challenging** than symmetric.
-
 --
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
 .black[<ins>Take-home message</ins>:
 
-The performance of any motor skill is affected by cognitive, motor, and biomechanical factors.
+The performance of any motor skill is affected by cognitive and motor factors.
 ]]]
 
 ---
@@ -390,61 +387,17 @@ ggplot2::ggplot(prp, aes(x = soa, y = rt)) +
 
 ---
 
-class: title-slide-section-gold, middle, center
-
---
-
-## Why are these seemingly *simple* tasks so difficult?
-
----
-
-.center[
-![:scale 100%](imgs/intrinsic-patterns.png)
-]
-
----
-
-.footnote[Source: https://youtu.be/zx53Zj7EKQE]
-
-.center[
-<iframe width="1050" height="575" src="https://www.youtube.com/embed/zx53Zj7EKQE?start=101" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-]
-
----
-
-## Rapid bimanual reaches .grey[with/without] an obstacle?
-
-.center[
-![](imgs/bimanual-reach.png)
-]
-
----
-
-background-image: url(imgs/kelso-left-hurdle.png)
-background-size: 35%
-background-position: 95% 93%
-
-## Rapid bimanual reaches .grey[with/without] an obstacle?
-
-.footnote[Kelso et al 1983 (http://dx.doi.org/10.1080/14640748308402139)]
-
-![:scale 75%](imgs/kelso-etal.png)
-
----
-
 # Learning objectives
 
 1. Define the term **attention** as it relates to the performance of motor skills.
 
 2. Describe how researchers can **assess** the attention demands of performing a motor skill and how attention **may limit** information-processing activities during task performance.
 
-3. Describe the difference between **symmetric** and **asymmetric** bimanual coordination and discuss why asymmetric is **more challenging** than symmetric.
-
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
 .black[<ins>Take-home message</ins>:
 
-The performance of any motor skill is affected by cognitive, motor, and biomechanical factors.
+The performance of any motor skill is affected by cognitive and motor factors.
 ]]]
 
 ---
@@ -461,6 +414,6 @@ background-position: 9% 15%
 
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @cartermaclab                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @cartermaclab                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
