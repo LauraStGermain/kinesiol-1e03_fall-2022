@@ -374,6 +374,20 @@ ggplot2::ggplot(fitts, aes(x = id, y = rt)) +
 
 ---
 
+## Pause, reflect
+
+1. How would movement times compare for tasks with:  
+
+    a) Amplitude = 2 cm | Target width = 2 cm (ID = 1 bit)  
+    b) Amplitude = 2 cm | Target width = 1 cm (ID = 2 bits)  
+    
+2. How would movement times compare for tasks with:  
+
+    a) Amplitude = 4 cm | Target width = 1 cm (ID = 3 bit)  
+    b) Amplitude = 8 cm | Target width = 2 cm (ID = 3 bits)  
+
+---
+
 ## Understanding the .grey[parameters *a* and *b*] in the equation for Fitts' Law
 
 .pull-left[
@@ -465,6 +479,12 @@ background-size: 55%
 
 ![:scale 100%](https://www.protourgolfcollege.com/uploads/5/6/1/5/5615801/522284_orig.png)
 ]]
+
+---
+
+## Pause, reflect
+
+Have a discussion with those around you to come up with other real-world examples of a speed-accuracy trade off
 
 ---
 
