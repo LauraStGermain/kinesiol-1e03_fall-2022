@@ -1,8 +1,8 @@
 ---
 title: "Motor learning: Fundamentals"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Brad McKay"
-date: "Fall 2021 Week 7 </br> Lecture 14"
+author: "Laura St. Germain"
+date: "Fall 2021 Week 6 </br> Lecture 12"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -21,11 +21,11 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r additional, echo=FALSE}
+```{r additional, echo=FALSE, include = FALSE}
 library(tidyverse)
 ```
 
-```{r xaringanExtra, echo=FALSE}
+```{r xaringanExtra, echo=FALSE, include = FALSE}
 xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "freezeframe",
                                     "panelset",
@@ -33,6 +33,146 @@ xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "tachyons", 
                                     "tile_view"))
 ```
+
+
+class: title-slide-section-gold, bottom
+
+# Review from last lecture
+
+---
+
+## The .grey[time between] the presentation of two stimuli can have a .grey[strong influence] on performance
+
+.center[
+![:scale 100%](imgs/prp-setup.png)]
+
+---
+
+## Psychological refractory period (PRP) .grey[decreases] as SOA .grey[increases]
+
+.footnote[*Approximate data of Davis 1959 through plot digitization of adapted figure in Schmidt & Lee 2011*]
+
+.pull-left[
+.black[Task 1 reaction time]: 161 ms
+
+.black[Task 2 (control) reaction time]: 128 ms
+
+<br>
+*We need to **compare** the reaction times of **Task 2 in the sequential condition** (Task 1 then Task 2) to the **Task 2 alone** (i.e., control condition) to determine whether a **PRP** happened*
+]
+
+--
+
+.pull-right[
+```{r echo=FALSE}
+# Create tibble of digitized Davis 1959 data
+prp <- tibble::tibble(
+  soa = c(50, 100, 150, 200, 250, 300, 350, 400, 450, 500),
+  rt = c(259.33, 221.99, 204.62, 172.08, 146.21, 135.49, 135.51, 126.25, 123.66, 134.75)
+)
+```
+
+```{r echo=FALSE, fig.align='center', fig.height=5.75}
+ggplot2::ggplot(prp, aes(x = soa, y = rt)) +
+  geom_line(size = 1) +
+  geom_point(size = 4, color = "#ac1455") +
+  scale_y_continuous(name = "Reaction time (ms)",
+                     limits = c(75, 275),
+                     breaks = seq(75, 275, 25)) +
+  scale_x_continuous(name = "Stimulus onset asynchrony (ms)",
+                     limits = c(0, 500),
+                     breaks = seq(0, 500, 50)) +
+  theme(
+    legend.text = element_text(size = 18),
+    legend.title = element_blank(),
+    legend.position = c(0.8, 0.9),
+    axis.title = element_text(face = "bold", size = 20),
+    axis.text = element_text(size = 18)
+  ) +
+  geom_hline(yintercept = 128, size = 1, linetype = "dashed") +
+  annotate(geom = "curve", x = 50, y = 115, xend = 0, yend = 125, curvature = -.3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "text", x = 51, y = 115, label = "Task 2 alone reaction time", hjust = "left", size = 6)
+```
+]
+
+---
+
+## We can manipulate .grey[task difficulty] with changes in .grey[width] and/or .grey[amplitude]
+
+.pull-left[
+### $MT = a + b\log_{2}(2A/W)$
+
+where:
+- *a* = y-intercept
+- *b* = slope
+- *A* = amplitude
+- *W* = width
+- *log<sub>2</sub>(2A/W)* = **index of difficulty**
+
+<br>
+*Q: What does this remind you of?*
+]
+
+.pull-right[.center[
+![:scale 85%](imgs/index-of-difficulty.png)
+]]
+
+---
+
+## ID .grey[determines] movement time per tap
+
+.footnote[*Reciprocal tapping task data from Fitts 1954 (https://doi.org/10.1037/h0055392) 1 oz stylus condition *]
+
+```{r echo=FALSE}
+# Create tibble of Fitts 1954 data
+fitts <- tibble::tibble(
+  target = c(rep("0.25 in", 4), rep("0.5 in", 4), rep("1 in", 4), rep("2 in", 4)),
+  id = c(4, 5, 6, 7, 3, 4, 5, 6, 2, 3, 4, 5, 1, 2, 3, 4),
+  rt = c(0.392, 0.484, 0.580, 0.731, 0.281, 0.372, 0.469, 0.595, 0.212, 0.260, 0.357, 0.481, 0.180, 0.203, 0.279, 0.388)
+)
+```
+
+.pull-left[.center[
+```{r echo=FALSE, message=FALSE, fig.align='center', fig.width=7.5, fig.height=7}
+ggplot2::ggplot(fitts, aes(x = id, y = rt)) +
+  geom_smooth(method = "lm", color = "#272822", se = FALSE, size = 2) +
+  geom_point(aes(color = target, shape = target, fill = target), size = 5) +
+  scale_y_continuous(name = "Movement time per tap (s)",
+                     limits = c(0.1, 0.8),
+                     breaks = seq(0.1, 0.8, 0.1)) +
+  scale_x_continuous(name = "Index of difficulty (ID)",
+                     limits = c(1, 7),
+                     breaks = seq(1, 7, 1)) +
+  scale_color_manual(values = c("#ac1455", "#fdbf57", "#007096", "#5e6a71")) +
+  scale_fill_manual(values = c("#ac1455", "#fdbf57", "#007096", "#5e6a71")) +
+  scale_shape_manual(values = c(21, 22, 23, 24)) +
+  theme(
+    legend.text = element_text(size = 18),
+    legend.title = element_blank(),
+    legend.position = c(0.89, 0.15),
+    axis.title = element_text(face = "bold", size = 20),
+    axis.text = element_text(size = 18)
+  )
+```
+]]
+
+.pull-right[<br>
+- Movement **time per tap increases** as movement **amplitude increases**
+
+- Movement **time per tap increases** as target **width decreases**
+
+- Movement **time per tap is constant** for a **fixed ratio** of movement **amplitude** to target **width**
+
+- Experience an online Fitts' task: http://fww.few.vu.nl/hci/interactive/fitts/
+]
+
+---
+
+class: inverse, middle, center
+
+# Any questions?
+
+---
 
 # How do we go...
 
@@ -75,21 +215,6 @@ Valid conclusions about motor learning depend on reliably separating relatively 
 
 ---
 
-# But .grey[sometimes] we falter...
-
-.pull-left[.center[
-![](https://media.giphy.com/media/LI7DRrJeN0dIk/giphy.gif)
-]
-
-<br>
-*Q: What is going on here?*]
-
-.pull-right[.center[
-![:scale 75%](https://media.giphy.com/media/hqRgIXccb3IE8/giphy.gif)
-]]
-
----
-
 # Performance .grey[versus] learning
 
 .pull-left[
@@ -125,7 +250,6 @@ Valid conclusions about motor learning depend on reliably separating relatively 
 <br>
 
 > Motor learning is a **set of processes** resulting from **practice or experience** causing **relatively permanent gains** in the **capability for skilled performance**.
-
 ---
 
 ## Motor learning is an .grey[umbrella term] but there are (at least) .grey[two] main types
@@ -249,26 +373,10 @@ An example of a skill acquisition paradigm is **sequence learning**
 
 ---
 
-## Learning .grey[alters the capability] for performance, but is not the only factor
-
-.center[
-![:scale 68%](imgs/factors-learning.png)
-]
-
----
-
 ## Learning produces .grey[relatively] permanent changes in performance
 
 .center[
 ![:scale 80%](imgs/relatively-permanent.png)
-]
-
----
-
-## Learning causes .grey[changes] at all levels of the nervous system
-
-.center[
-![:scale 63%](imgs/levels-learning.png)
 ]
 
 ---
@@ -285,15 +393,27 @@ An example of a skill acquisition paradigm is **sequence learning**
 
 1. .black[Improvement]: performance of the skill gets **better with time**
 
-2. .black[Consistency]: performance of the skill becomes increasingly less variable with time
+--
+
+2. .black[Consistency]: performance of the skill becomes **increasingly less variable** with time
+
+--
 
 3. .black[Stability]: performance becomes **increasingly more resistant** to *external* and *internal* perturbations
 
+--
+
 4. .black[Persistence]: the **improved performance capability** increases in its persistence
+
+--
 
 5. .black[Adaptability]: the improved performance can **generalize** to a variety of performance context characteristics
 
+--
+
 6. .black[Decreased attention demand]: learner can more easily perform **concurrent** activities
+
+--
 
 7. .black[Decreased energy cost]: performance of the skill becomes **more efficient** with time
 
@@ -330,78 +450,6 @@ ggplot2::ggplot(performance_curve,
     legend.position = "none",
     strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
     strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
-  )
-```
-
----
-
-## Some problems with performance curves
-
-1. Group means can (and often do) mask individual differences (see below)
-2. Averaging smooths out trial-by-trial variability (not shown on slide)
-
-```{r echo=FALSE}
-# Create tibble of hypothetical data to show how group mean 
-# can obfuscate participant level information
-performance_curves <- tibble::tibble(
-  id = rep(1:3, each = 10),
-  trial = rep(1:10, 3),
-  error = c(34, 28, 24, 21, 20, 19, 19, 19, 18, 18,
-            23, 21, 20, 19, 18, 17, 16, 16, 15, 15,
-            rep(10, 10))
-)
-
-performance_curves <- performance_curves %>% 
-  dplyr::mutate(id = forcats::as_factor(id))
-
-curves_mean <- performance_curves %>% 
-  dplyr::group_by(trial) %>% 
-  dplyr::summarize(
-    n = n(),
-    mean_error = mean(error, na.rm = TRUE)
-  )
-```
-
-```{r echo=FALSE, fig.align='center', fig.width=10, fig.height=6}
-ggplot2::ggplot(performance_curves,
-                              aes(x = trial, y = error)) +
-  geom_line(aes(group = id, color = id), linetype = "dashed", size = 1) +
-  geom_line(data = curves_mean, aes(y = mean_error), size = 1) +
-  scale_x_continuous(name = "Trial",
-                     limits = c(1, 10),
-                     breaks = seq(1, 10, 1)) +
-  scale_y_continuous(name = "Error",
-                     limits = c(0, 35),
-                     breaks = seq(0, 35, 5)) +
-  scale_color_manual(values = c("#ac1455","#fdbf57", "#97999b")) +
-  theme(
-    axis.title = element_text(face = "bold", size = 20),
-    axis.text = element_text(size = 18),
-    legend.position = "none"
-  ) +
-  annotate(
-    geom = "curve", x = 3.5, y = 33, xend = 2, yend = 29, size = 1,
-    curvature = .3, color = "#ac1455", arrow = arrow(length = unit(3, "mm"))
-  ) +
-  annotate(
-    geom = "curve", x = 5, y = 23, xend = 3.5, yend = 20, size = 1,
-    curvature = .2, color = "#fdbf57", arrow = arrow(length = unit(3, "mm"))
-  ) +
-  annotate(
-    geom = "curve", x = 5.5, y = 6, xend = 4, yend = 9.5, size = 1,
-    curvature = -.2, color = "#97999b", arrow = arrow(length = unit(3, "mm"))
-  ) +
-  annotate(
-    geom = "text", x = 3.6, y = 33, label = "Person shows a rapid improvement",
-    hjust = "left", size = 6
-  ) +
-  annotate(
-    geom = "text", x = 5.1, y = 23, label = "Person shows a slow improvement",
-    hjust = "left", size = 6
-  ) +
-  annotate(
-    geom = "text", x = 5.6, y = 6, label = "Person shows no improvement",
-    hjust = "left", size = 6
   )
 ```
 
@@ -494,6 +542,12 @@ ggplot2::ggplot(ret_trans, aes(x = block, y = score, group = group)) +
 
 ---
 
+## Pause, reflect
+
+You often hear people say "practice makes perfect". Some coaches even say "perfect practice makes perfect". Do you agree, and why or why not?
+
+---
+
 ## .grey[Knowledge translation] of best practice conditions poses a .grey[considerable challenge]
 
 .center[<br>
@@ -532,6 +586,12 @@ ggplot2::ggplot(ret_trans, aes(x = block, y = score, group = group)) +
 
 ---
 
+## Pause, reflect
+
+Compare and contrast retention and transfer tests.
+
+---
+
 # Learning objectives
 
 1. Define **motor learning**.
@@ -558,8 +618,10 @@ background-position: 9% 15%
 
 # What questions do you have?
 
+![:scale 30%](imgs/questions.png)
+
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @bradmckay8                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @MotorMeta                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
