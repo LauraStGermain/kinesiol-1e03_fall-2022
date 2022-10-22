@@ -342,7 +342,7 @@ fitts <- tibble::tibble(
 ggplot2::ggplot(fitts, aes(x = id, y = rt)) +
   geom_smooth(method = "lm", color = "#272822", se = FALSE, size = 2) +
   geom_point(aes(color = target, shape = target, fill = target), size = 5) +
-  scale_y_continuous(name = "Movement time per tap (ms)",
+  scale_y_continuous(name = "Movement time per tap (s)",
                      limits = c(0.1, 0.8),
                      breaks = seq(0.1, 0.8, 0.1)) +
   scale_x_continuous(name = "Index of difficulty (ID)",
