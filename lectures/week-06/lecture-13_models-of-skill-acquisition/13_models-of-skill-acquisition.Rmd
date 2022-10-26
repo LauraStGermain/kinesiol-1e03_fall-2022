@@ -35,6 +35,20 @@ xaringanExtra::use_xaringan_extra(c("clipboard",
                                     "tile_view"))
 ```
 
+## Test 2
+
+- Tuesday November 1 (multiple choice) and Thursday November 3 (fill in the blank and short answer)
+
+- Bring a **pencil** for the scantron
+
+- Bring student ID
+
+- Student's who's last names start with **N-Z** will be writing in a different room
+    - November 1: Canadian Martyrs Testing Centre
+    - November 3: T12 room 123
+
+---
+
 class: title-slide-section-gold, bottom
 
 # Review from last lecture
