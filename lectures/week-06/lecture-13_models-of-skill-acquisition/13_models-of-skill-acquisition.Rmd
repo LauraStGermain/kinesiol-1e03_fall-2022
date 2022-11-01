@@ -100,74 +100,14 @@ class: title-slide-section-gold, bottom
 
 ---
 
-## Which training program would you .grey[recommend]?
+## We need to rely on .grey[methods] that can separate the .grey[relatively permanent] effects from .grey[transient] ones
 
-```{r echo=FALSE}
-ret_trans <- tibble::tibble(
-  group = c(rep("Program 1", 12), rep("Program 2", 12)),
-  block = rep(1:12, 2),
-  phase = c(rep("Practice", 6), rep("Retention", 3), rep("Transfer", 3), rep("Practice", 6), rep("Retention", 3), rep("Transfer", 3)),
-  score = c(98, 97, 99, 99, 100, 100, 14, 12, 11, 7, 9, 6, 8, 38, 50, 58, 70, 81, 83, 80, 82, 80, 78, 79)
-)
-```
+.black[Performance-learning paradox]
+- a high level of performance in practice **does not** mean an individual has learned the task
 
-```{r echo=FALSE, fig.align='center', fig.width=12}
-ggplot2::ggplot(ret_trans, aes(x = block, y = score, group = group)) +
-  geom_line(aes(color = group, linetype = group), size = 1) +
-  geom_point(aes(color = group, shape = group), size = 4) +
-  scale_y_continuous(name = "Score (%)",
-                     limits = c(0, 100),
-                     breaks = seq(0, 100, 25)) +
-  scale_x_continuous(name = "Blocks",
-                     breaks = seq(1, 12, 1)) +
-  scale_color_manual(values = c("#ac1455", "#fdbf57")) +
-  scale_linetype_manual(values = c(1, 2)) +
-  facet_grid(~phase, scales = "free_x", space = "free_x") +
-  theme(
-    legend.text = element_text(size = 18),
-    legend.title = element_blank(),
-    axis.title = element_text(face = "bold", size = 20),
-    axis.text = element_text(size = 18),
-    strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
-    strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
-  )
-```
+- a low level of performance in practice **does not** mean an individual has not learned the task
 
----
-
-## We must use .grey[retention] or .grey[transfer] tests to measure whether a skill has been learned
-
-.pull-left[.center[
-.black[Retention tests]]
-- Assesses the **permanence** or **persistence** of the skill
-
-- Occurs after a period of **no practice** (rule of thumb is minimum of 24 hours)
-
-- Are performed under a **common level** of the manipulated practice variable
-
-- The number of tests **can vary** from experiment to experiment
-]
-
-.pull-right[.center[
-.black[Transfer tests]]
-- Assesses the **adaptability** or **flexibility** of the skill
-
-- Occurs after a period of **no practice** (rule of thumb is minimum of 24 hours)
-
-- Are performed under a **common level** of the manipulated practice variable
-
-- The number of tests **can vary** from experiment to experiment
-]
-
----
-
-## .grey[Knowledge translation] of best practice conditions poses a .grey[considerable challenge]
-
-.center[<br>
-![:scale 100%](imgs/lab-to-applied.png)
-
-.big[*Too often our **perceptions** about the **best** ways to facilitate learning are **heavily biased***]
-]
+- To avoid being a victim of this paradox, we must rely on performance in **retention** and **transfer** tests when making evidence-based recommendations
 
 ---
 
@@ -186,9 +126,9 @@ background-size: cover
 
 1. Identify and describe the **basic recipe** for a motor learning experiment/intervention.
 
-2. Compare and contrast **Fitts'** and **Bernstein's** models of skill acquisition.
+2. Compare and contrast **retention** and **transfer** tests.
 
-3. Explain some key factors that can **impact** skill **retention** and **transfer** besides practice.
+3. Compare and contrast **Fitts'** and **Bernstein's** models of skill acquisition.
 
 --
 
@@ -331,6 +271,42 @@ ggplot2::ggplot(ml_expt, aes(x = sessions, y = score, group = group)) +
 
 ---
 
+## Pause, reflect
+
+What are the phasess required for a motor learning experiment?
+
+What phase(s) allow us to assess whether learning has occured?
+
+---
+
+## We must use .grey[retention] or .grey[transfer] tests to measure whether a skill has been learned
+
+.pull-left[.center[
+.black[Retention tests]]
+- Assesses the **permanence** or **persistence** of the skill
+
+- Occurs after a period of **no practice** (rule of thumb is minimum of 24 hours)
+
+- Are performed under a **common level** of the manipulated practice variable
+
+- Include the **same task** as the pre-test and acquisition phases
+]
+
+--
+
+.pull-right[.center[
+.black[Transfer tests]]
+- Assesses the **adaptability** or **flexibility** of the skill
+
+- Occurs after a period of **no practice** (rule of thumb is minimum of 24 hours)
+
+- Are performed under a **common level** of the manipulated practice variable
+
+- Include a **novel variation** of the task included in pre-test and acquisition
+]
+
+---
+
 ## Models give us a .grey[general guideline] to understand the learning process, but the stages .grey[are not] always clear cut
 
 .center[
@@ -461,6 +437,12 @@ ggplot2::ggplot(ml_expt, aes(x = sessions, y = score, group = group)) +
 .pull-right[.center[
 ![](https://lastwordonsports.com/hockey/wp-content/uploads/sites/11/2020/08/gettyimages-1263767979-594x594-2.jpg)
 ]]
+
+---
+
+# Pause, reflect
+
+What stage of learning are these learners likely in? What evidence do you have to suggest this?
 
 ---
 
@@ -615,7 +597,7 @@ ggplot2::ggplot(continuous_retention, aes(x = segment, y = error)) +
 ## There are 3 main .grey[similarity] factors that can impact skill .grey[transfer]
 
 .pull-left[
-.black[Recall] that **transfer** refers to the **gain or loss** in the capability to perform one task as a result of practice or experience **on another task**
+**Transfer** refers to the **gain or loss** in the capability to perform one task as a result of practice or experience **on another task**
 
 We can classify transfer as:
 - **Positive** transfer if it enhances performance in the other skill
@@ -633,81 +615,13 @@ We can classify transfer as:
 
 ---
 
-## Transfer based on .grey[common] movement patterning
-
-.footnote[Left: https://c1.wallpaperflare.com/preview/494/600/985/volleyball-serving-player-female.jpg; Right: https://kcdnft-6f86.kxcdn.com/wp-content/uploads/2015/11/serve-trophy.jpg]
-
-- Practice of **one variant** of the class of movements **sharing** the same general pattern **should** transfer to **any other variant** using this same pattern
-
-.pull-left[.center[
-![:scale 45%](https://c1.wallpaperflare.com/preview/494/600/985/volleyball-serving-player-female.jpg)
-]]
-
-.pull-right[.center[
-![:scale 45%](https://kcdnft-6f86.kxcdn.com/wp-content/uploads/2015/11/serve-trophy.jpg)
-]]
-
----
-
-## Transfer based on .grey[common] perceptual elements
-
-.footnote[Left: https://smartcdn.prod.postmedia.digital/calgaryherald/wp-content/uploads/2017/01/price.jpg; Right: https://www.heraldnews.com/storyimage/WL/20180307/SPORTS/180307565/EP/1/1/EP-180307565.jpg]
-
-- Perceptual elements refer to aspects of a task that deal with the use of **sensory information** to guide and control actions
-
-.pull-left[.center[
-![:scale 90%](https://smartcdn.prod.postmedia.digital/calgaryherald/wp-content/uploads/2017/01/price.jpg)
-]]
-
-.pull-right[.center[
-![](https://www.heraldnews.com/storyimage/WL/20180307/SPORTS/180307565/EP/1/1/EP-180307565.jpg)
-]]
-
----
-
-## Transfer based on .grey[common] conceptual elements
-
-.footnote[Left: https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/RJHJBPNKEZFM7OG4YIURNXM2KQ.jpg; Right: https://nypost.com/wp-content/uploads/sites/2/2021/07/lebron-james-stephen-curry-nba-play-in.jpg]
-
-- Conceptual elements refer to aspects of a task that deal with the use of **rules, principles, guidelines,** or **strategies** that govern actions
-
-.pull-left[.center[
-![](https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/RJHJBPNKEZFM7OG4YIURNXM2KQ.jpg)
-]]
-
-.pull-right[.center[
-![](https://nypost.com/wp-content/uploads/sites/2/2021/07/lebron-james-stephen-curry-nba-play-in.jpg)
-]]
-
----
-
-## .grey[Teaching] for skill transfer
-
-- Point out **similarities** and/or **differences** among skills
-  
-  - helps the learner to *"borrow"* movement patterns from previously learned skills
-
---
-
-- Use **verbal cues** to emphasize transfer
-
-  - e.g., "*remember how you had to shift your weight when you were swinging a bat*"
-
---
-
-- Emphasize transfer to **future** skills
-
-  - remind learners about how today's skill will **generalize** to tomorrow's skill
-
----
-
 # Learning objectives
 
 1. Identify and describe the **basic recipe** for a motor learning experiment/intervention.
 
-2. Compare and contrast **Fitts'** and **Bernstein's** models of skill acquisition.
+2. Compare and contrast **retention** and **transfer** tests.
 
-3. Explain some key factors that can **impact** skill **retention** and **transfer** besides practice.
+3. Compare and contrast **Fitts'** and **Bernstein's** models of skill acquisition.
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
@@ -717,7 +631,6 @@ Models of skill acquisition can help us recognize areas to focus on during pract
 ]]]
 
 ---
-
 class: title-slide-final, middle
 background-image: url(https://raw.githubusercontent.com/cartermaclab/mackin-xaringan/main/imgs/logos/mcmaster-stack-color.png)
 background-size: 95px
@@ -725,8 +638,10 @@ background-position: 9% 15%
 
 # What questions do you have?
 
+![:scale 30%](imgs/questions.png)
+
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @bradmckay8                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @MotorMeta                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
