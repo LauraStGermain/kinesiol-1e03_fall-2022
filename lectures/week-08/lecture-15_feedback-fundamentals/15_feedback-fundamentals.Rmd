@@ -41,89 +41,162 @@ class: title-slide-section-gold, bottom
 
 ---
 
-## Practice can be organized to .grey[promote] different amounts of .grey[contextual interference]
-
-.footnote[<sup>1</sup>This term was introduced by Battig 1979 when he first demonstrated the contextual interference effect; Fig: Magill & Anderson 2017]
-
-.black[CONTEXTUAL INTERFERENCE]<sup>1</sup>: refers to the **interference** that results from performing various tasks or skills with the **context** of practice
-
-.center[
-![](imgs/ci-continuum.png)
-]
-
-.black[CONTEXTUAL INTERFERENCE EFFECT]: when a **high amount** of contextual interference results in **better** retention and/transfer performance than a low amount of interference
-
----
-
-background-image: url(imgs/elaboration.png)
-background-position: 95% 75%
-
-## Why is random .grey[more effective] than blocked?
-
-.footnote[Shea & Morgan 1979 (https://doi.org/10.1037/0278-7393.5.2.179); Shea & Zimny 1983 (https://doi.org/10.1016/S0166-4115(08)61998-6)]
-
-.left-third[
-.black[<ins>ELABORATION HYPOTHESIS</ins>]
-
-Interleaving tasks gives the learner opportunities to engage in **inter- & intra-task processing** (i.e., compare and contrast) in **working memory**, which **facilitates** the development of more **distinct or elaborative** motor memories
-]
-
----
-
-background-image: url(imgs/forgetting-reconstruction.png)
-background-position: 95% 75%
-
-## Why is random .grey[more effective] than blocked?
-
-.footnote[Lee & Magill 1983 (https://doi.org/10.1037/0278-7393.9.4.730)]
-
-.left-third[
-.black[<ins>FORGETTING-RECONSTRUCTION HYPOTHESIS</ins>]
-
-Interleaving tasks forces the learner to .gold["forget" or dump] a given .gold[action plan] from .gold[working memory] to plan and execute successive trials. The learner must then .gold[(re)construct an action plan] on each trial.
-]
-
----
-
-## Testing .grey[between] explanations: .grey[TMS]
-
-.footnote[Approximate data of Lin et al 2008 (https://doi.org/10.3200/JMBR.40.6.578-586) through plot digitization]
+## Recall this .grey[performance] curve...
 
 ```{r echo=FALSE}
-lin_tms <- tibble::tibble(
-    group = c(rep("Blocked", 12), rep("Random", 12)),
-    stim = c(rep("No TMS", 4), rep("Sham TMS", 4), rep("TMS", 4), rep("No TMS", 4), rep("Sham TMS", 4), rep("TMS", 4)),
-    phase = c(rep("Acquisition", 2), rep("Retention", 2), rep("Acquisition", 2), rep("Retention", 2), rep("Acquisition", 2), rep("Retention", 2), rep("Acquisition", 2), rep("Retention", 2), rep("Acquisition", 2), rep("Retention", 2), rep("Acquisition", 2), rep("Retention", 2)),
-    block = factor(rep(1:4, 6)),
-    error = c(21.44, 10.26, 13.93, 21.34, 21.92, 10.53, 15.15, 20.12, 19.94, 9.85, 12.84, 18.76, 17.94, 11.59, 11.92, 14.91, 20.32, 12.33, 12.87, 16, 21.27, 14.1, 13.15, 22.53)
+# Create tibble of illustrative data for performance curve
+performance_curve <- tibble::tibble(
+  day = c(rep("Day 1", 25), rep("Day 2", 25), rep("Day 3", 25), rep("Day 4", 25)),
+  trial = rep(1:25, 4),
+  error = c(2.4, 2.9, 3.3, 3.5, 3.3, 3.7, 3.9, 4.3, 4.6, 4.9, 4.8, 5.2, 5.5, 5.2, 5.6, 6.0, 6.0, 5.8, 6.2, 6.4, 6.4, 6.5, 6.6, 7.0, 6.7, 5.5, 6.1, 6.5, 6.8, 6.7, 7.2, 6.9, 7.2, 7.0, 7.5, 7.3, 7.5, 7.7, 7.4, 7.7, 7.5, 7.5, 7.7, 8.1, 7.7, 7.9, 8.3, 7.9, 8.0, 8.0, 7.0, 7.3, 7.7, 8.0, 7.9, 8.1, 8.0, 8.2, 7.9, 8.0, 7.8, 7.9, 8.2, 8.0, 8.0, 8.3, 7.9, 8.3, 8.2, 8.2, 8.3, 8.2, 8.3, 8.4, 8.3, 7.9, 8.2, 8.1, 8.3, 8.1, 8.3, 8.2, 8.3, 8.2, 8.5, 8.3, 8.2, 8.5, 8.3, 8.6, 8.8, 8.5, 8.7, 8.4, 8.3, 8.6, 8.7, 8.5, 8.4, 8.6)
 )
-
-lin_tms_practice_only <- lin_tms %>% 
-  dplyr::filter(phase == "Acquisition")
 ```
 
-.wide-left[
-```{r echo=FALSE, fig.align='center', fig.width=10, fig.height=6.5}
-ggplot2::ggplot(lin_tms, aes(x = block, y = error, group = interaction(stim, phase))) +
-  geom_line(data = lin_tms_practice_only, aes(color = stim, linetype = stim), size = 1) +
-  geom_point(aes(color = stim, fill = stim, shape = stim), size = 4) +
-  scale_y_continuous(name = "Root mean squared error (deg)",
-                     limits = c(8, 24),
-                     breaks = seq(8, 24, 2)) +
-  scale_x_discrete(name = NULL,
-                   labels = c("1" = "B1",
-                              "2" = "B12",
-                              "3" = "1-min",
-                              "4" = "24-hr")) +
+```{r echo=FALSE, fig.align='center', fig.width=12, fig.height=7}
+ggplot2::ggplot(performance_curve,
+                              aes(x = trial, y = error, 
+                                  group = day)) +
+  geom_line(size = 1.25) +
+  scale_x_continuous(name = "Trials",
+                     limits = c(1, 25),
+                     breaks = seq(5, 25, 10)) +
+  scale_y_continuous(name = "Time on target (s)",
+                     limits = c(0, 10),
+                     breaks = seq(0, 10, 1)) +
+  facet_grid(~day) +
+  theme(
+    axis.title = element_text(face = "bold", size = 20),
+    axis.text = element_text(size = 18),
+    legend.position = "none",
+    strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
+    strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
+  )
+```
+
+---
+
+## Establishing and using a .grey[pre-shot] routine is .grey[advantageous] for novice .grey[and] experienced golfers
+
+.footnote[Data based on McCann et al 2001 (https://doi.org/10.1080/17461390100071503) and adapted through plot digitization from Lee 2011]
+
+.left-column[
+.black[Task]: Wedge shots from **43.75**, **54.68**, and **65.62** yards
+
+.black[Groups]:
+1. **Control** - no practice
+2. **Practice** - 3-week training program
+3. **Practice+Preshot** - same as Practice plus a 13 step preshot routine
+]
+
+```{r echo=FALSE}
+# Create tibble of adapted McCann et al 2001 data
+mccann <- tibble::tibble(
+  skill = c(rep("Non-golfers", 3), rep("Golfers", 3)),
+  group = factor(rep(1:3, 2)),
+  score = c(5.22, 21.34, 34.74, 2.71, 19.98, 29.84)
+)
+```
+
+.right-column[
+```{r echo=FALSE, fig.align='center', fig.width = 12, fig.height=6}
+ggplot2::ggplot(mccann, aes(x = group, y = score, group = skill)) +
+  geom_segment(aes(x = group, xend = group, y = 0, yend = score), color = "#272822", size = 1.25) +
+  geom_point(color = "#5e6a71", fill = "#fdbf57", size = 6, shape = 21, stroke = 2) +
+  scale_x_discrete(name = "",
+                   labels = c("1" = "Control",
+                              "2" = expression(paste("Practice \n only")),
+                              "3" = expression(paste("Practice + \n Preshot")))) +
+  scale_y_continuous(name = "Improvement from baseline (%)",
+                     limits = c(0, 40),
+                     breaks = seq(0, 40, 10)) +
+  coord_flip() +
+  facet_grid(~skill) +
+  theme(
+    axis.title = element_text(face = "bold", size = 20),
+    axis.text = element_text(size = 18),
+    legend.position = "none",
+    strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
+    strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
+  )
+```
+]
+
+---
+
+## Preshot routines .grey[may be] advantageous for multiple reasons
+
+.center[
+![:scale 55%](imgs/tee-shot.png)
+]
+
+- Psychological explanations such as **increased confidence**, **self-efficacy**, **positive outlook**, etc
+
+- **Attentional focus** on **external** factors important to successful performance
+
+---
+
+## Focus of attention can be based on .grey[specific instructions] or be .grey[self-adopted]
+
+.black[ATTENTIONAL FOCUS]: The information that a performer's attention (or consciousness) is directed at
+
+- **Internal** focus of attention: Focus on information associated with the performer's **body**
+  - e.g., "*Think about the timing of your hip rotation*"
+
+- **External** focus of attention: Focus on information that is **external** to the performer's body
+
+  - e.g., "*Think about the tennis racquet hitting the ball*"
+
+<br>
+.center[
+### THIS IS **NOT** A VISUAL FOCUS...IT IS A <ins>**MENTAL FOCUS**</ins>
+]
+
+---
+
+## An .grey[external] focus is .grey[more] effective than an internal
+
+.footnote[Approximate data from Wulf et al 2003 Experiment 2 (https://doi.org/10.1080/02724980343000062) through plot digitization]
+
+.left-column[
+.black[Task]: Stabilometer
+.center[
+![:scale 80%](imgs/stabilometer.png)
+]
+.black[Groups]:
+- **Internal** focus = feet
+- **External** focus = markers on platform
+- **Control** = no instructions given
+]
+
+```{r echo=FALSE}
+# Create tibble of adapted Wulf et al 2003 data
+wulf_balance <- tibble::tibble(
+  group = c(rep("Control", 21), rep("External", 21), rep("Internal", 21)),
+  phase = factor(c(rep("Practice 1", 7), rep("Practice 2", 7), rep("Retention", 4), rep("Transfer", 3), rep("Practice 1", 7), rep("Practice 2", 7), rep("Retention", 4), rep("Transfer", 3), rep("Practice 1", 7), rep("Practice 2", 7), rep("Retention", 4), rep("Transfer", 3))),
+  trials = rep(1:21, 3),
+  rmse = c(10.76, 8.92, 8.14, 7.54, 7.38, 6.46, 6.43, 6.91, 6.22, 5.93, 5.46, 5.32, 5.11, 5.32, 5.49, 5.15, 5.13, 4.85, 4.3, 4.59, 4.25, 11.09, 8.8, 7.62, 6.81, 6.34, 6.34, 5.93, 6.01, 5.6, 4.89, 5.15, 4.87, 4.92, 4.49, 4.68, 4.21, 3.92, 4.14, 3.26, 3.14, 3.14, 10.88, 9.79, 9.51, 8.63, 8.4, 8.14, 7.73, 7.85, 7.71, 7.57, 6.72, 6.41, 6.24, 6.2, 6.08, 5.86, 5.75, 5.91, 4.73, 4.7, 4.11)
+)
+```
+
+.right-column[
+```{r echo=FALSE, fig.align='center', fig.width=12, fig.height=7}
+ggplot2::ggplot(wulf_balance, aes(x = trials, y = rmse, group = group)) +
+  geom_line(aes(color = group), size = 1) +
+  geom_point(aes(color = group, fill = group, shape = group), size = 4) +
+  scale_y_continuous(name = "Root mean squared error (degs)",
+                     limits = c(0, 12),
+                     breaks = seq(0, 12, 2)) +
+  scale_x_continuous(name = "Trials",
+                     breaks = seq(1, 21, 2)) +
   scale_color_manual(values = c("#ac1455", "#fdbf57", "#5e6a71")) +
   scale_fill_manual(values = c("#ac1455", "#fdbf57", "#5e6a71")) +
   scale_shape_manual(values = c(21, 22, 23)) +
-  facet_grid(~group) +
+  facet_grid(~phase, scales = "free_x", space = "free_x") +
   theme(
     axis.title = element_text(face = "bold", size = 20),
     axis.text = element_text(size = 18),
     legend.title = element_blank(),
-    legend.position = c(0.9, 0.12),
+    legend.position = c(0.1, 0.15),
     legend.text = element_text(size = 16),
     strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
     strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
@@ -131,135 +204,20 @@ ggplot2::ggplot(lin_tms, aes(x = block, y = error, group = interaction(stim, pha
 ```
 ]
 
-.narrow-right[
-- **Random+TMS** group significantly **worse** than Random+No-TMS and Random+Sham groups
+---
 
-- **No significant differences** found between the different **Blocked** groups
+## Explaining the .grey[external focus] advantage
+
+.black[CONSTRAINED ACTION HYPOTHESIS]: **Consciously** controlling one's movements **constrains** the motor system, which **interferes** with **automatic** control process
+
+- Focusing on the **movement effect** via an **external** focus allows the motor system to more **naturally self-organize**
 
 <br>
-.black[*Q: Which hypothesis is supported by this data?*]
-]
+.black[*Q: How could we test the predictions of the constrained action hypothesis?*]
 
----
+- "Consciously controlling..."
 
-background-image: url(imgs/ci-explanations-box-diagrams.png)
-background-position: 95% 80%
-background-size: 50%
-
-## But was there a .grey[methodological issue] in the experiment? 
-
-.footnote[Lin et al 2008 (https://doi.org/10.3200/JMBR.40.6.578-586)]
-
-.pull-left[
-![](imgs/lin-timeline.png)
-]
-
----
-
-## Testing .grey[between] explanations: .grey[Probe reaction time]
-
-.footnote[Approximate data from Li & Wright 2000 (https://doi.org/10.1080/713755890) through plot digitization]
-
-.pull-left[
-.black[Task]: Sequence learning (3 patterns)
-
-.black[Probe task]: 2-Choice reaction time task (**low** versus **high** tone)
-
-.black[Probe protocol]: **Randomly** presented on **some** trials (12 trials for each tone)
-
-.black[Groups]:
-- **Random** groups
-  1. Pre-response interval
-  2. Inter-trial interval
-- **Blocked** groups
-  1. Pre-response interval
-  2. Inter-trial interval
-]
-
-```{r echo=FALSE}
-li_probe <- tibble::tibble(
-    group = c(rep("Blocked", 2), rep("Random", 2)),
-    interval = c("Pre-response", "Inter-trial", "Pre-response", "Inter-trial"),
-    rt = c(739.79, 723.30, 885.86, 779.84),
-    sd = c(16.49, 21.04, 25.92, 21.21)
-)
-```
-
-.pull-right[
-```{r echo=FALSE, fig.align='center', fig.height=6.5}
-ggplot2::ggplot(li_probe) +
-  geom_bar(aes(x = group, y = rt, fill = group), stat = "identity") +
-  geom_errorbar(aes(x = group, ymin = rt - sd, ymax = rt + sd), width = 0.4, size = 1.3) +
-  scale_y_continuous(name = "Probe choice reaction time (ms)",
-                     limits = c(0, 1000),
-                     breaks = seq(0, 1000, 100)) +
-  scale_x_discrete(name = NULL,
-                   breaks = NULL) +
-  scale_fill_manual(values = c("#ac1455", "#fdbf57")) +
-  facet_grid(~factor(interval, levels = c("Pre-response", "Inter-trial"))) +
-  theme(
-    axis.title = element_text(face = "bold", size = 20),
-    axis.text.y = element_text(size = 18),
-    axis.text.x = element_blank(),
-    legend.title = element_blank(),
-    legend.position = c(0.87, 0.92),
-    legend.text = element_text(size = 16),
-    strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
-    strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
-  ) +
-  geom_hline(yintercept = 406.63, linetype = "dashed", size = 1)
-```
-]
-
----
-
-## .grey[Judgments of learning] based on repetition schedule
-
-.footnote[Approximate data from Simon and Bjork 2001 (https://doi.org/10.1037/0278-7393.27.4.907)]
-
-```{r echo=FALSE}
-simon <- tibble::tibble(
-    group = c(rep("Blocked", 14), rep("Random", 14)),
-    phase = c(rep("Acquisition", 6), "Retention", rep("Acquisition", 6), "Retention", rep("Acquisition", 6), "Retention", rep("Acquisition", 6), "Retention"),
-    block = factor(rep(1:7, 4)),
-    type = c(rep("Actual error", 7), rep("Judgment of learning", 7), rep("Actual error", 7), rep("Judgment of learning", 7)),
-    error = c(8.39, 6.34, 4.66, 5.16, 4.53, 4.72, 19.69, 7.75, 7.46, 6.47, 5.67, 5.91, 5.5, 7.87, 12.98, 12.86, 8.88, 7.52, 5.59, 5.53, 10.93, 11.43, 10.57, 10.74, 9.88, 9.66, 8.93, 11.76)
-)
-
-simon_practice_only <- simon %>% 
-  dplyr::filter(phase == "Acquisition")
-```
-
-```{r echo=FALSE, fig.align='center', fig.width=12, fig.height=6.5}
-ggplot2::ggplot(simon, aes(x = block, y = error, group = interaction(group, phase))) +
-  geom_line(data = simon_practice_only, aes(color = group, linetype = type), size = 1) +
-  geom_point(aes(color = group, fill = group, shape = group), size = 4) +
-  scale_y_continuous(name = "Percent absolute constant errror (%)",
-                     limits = c(0, 20),
-                     breaks = seq(0, 20, 5)) +
-  scale_x_discrete(name = NULL,
-                   labels = c("1" = "B1",
-                              "2" = "B2",
-                              "3" = "B3",
-                              "4" = "B4",
-                              "5" = "B5",
-                              "6" = "B6",
-                              "7" = "24-hr")) +
-  scale_color_manual(values = c("#ac1455", "#fdbf57")) +
-  scale_fill_manual(values = c("#ac1455", "#fdbf57")) +
-  scale_shape_manual(values = c(21, 22)) +
-  facet_grid(~type) +
-  theme(
-    axis.title = element_text(face = "bold", size = 20),
-    axis.text = element_text(size = 18),
-    legend.title = element_blank(),
-    legend.position = c(0.93, 0.9),
-    legend.text = element_text(size = 16),
-    strip.text.x = element_text(face = "bold", size = 20, color = "#FFFFFF"),
-    strip.background = element_rect(color = "#272822", fill = "#7a003c", size = 2, linetype = "solid")
-  ) +
-  scale_linetype(guide = "none")
-```
+- "...constrains the motor system...interferes with automatic control processes"
 
 ---
 
@@ -286,8 +244,6 @@ background-size: contain
 2. Compare and contrast the **knowledge of performance** and **knowledge of results** feedback, and give examples of each.
 
 3. Discuss the **roles** and **influence** of augmented feedback on motor learning.
-
-4. Describe **theoretical** accounts of **effective** augmented feedback schedules.
 
 --
 
@@ -469,7 +425,7 @@ kbl(kr_kp_table,
 
 ## The .grey[roles] of augmented feedback in motor learning
 
-.footnote[<sup>1</sup>Salmoni et al 1984 (https://doi.org/10.1037/0033-2909.95.3.355); <sup>2</sup>McKay et al: https://youtu.be/i8nlc1xHKX4; <sup>3</sup>Wulf and Lewthwaite 2016 (https://doi.org/10.3758/s13423-015-0999-9)]
+.footnote[<sup>1</sup>Salmoni et al 1984 (https://doi.org/10.1037/0033-2909.95.3.355); <sup>2</sup>Wulf and Lewthwaite 2016 (https://doi.org/10.3758/s13423-015-0999-9)]
 
 .pull-left[
 .black[Informational role]
@@ -479,8 +435,6 @@ kbl(kr_kp_table,
 
 - Emphasized in the **Guidance** hypothesis<sup>1</sup>
   - Feedback is both a **performance** and **learning** variable
-  
-  - Some recent concerns<sup>2</sup> about its accuracy, reliability, and validity
 ]
 
 --
@@ -493,8 +447,6 @@ kbl(kr_kp_table,
 
 - Emphasized in the **"OPTIMAL"** theory<sup>3</sup>
   - Practice context can put learners into a **virtuous** or a **vicious** cycle
-  
-  - Concerns it was *"dead on arrival"* (e.g., many predictions not supported in the literature already)
 ]
 
 ---
@@ -536,8 +488,6 @@ kbl(kr_kp_table,
 2. Compare and contrast the **knowledge of performance** and **knowledge of results** feedback, and give examples of each.
 
 3. Discuss the **roles** and **influence** of augmented feedback on motor learning.
-
-4. Describe **theoretical** accounts of **effective** augmented feedback schedules.
 
 .bg-gold.b--mid-gray.ba.bw2.br3.shadow-5.ph4.mt5[
 .tc[
