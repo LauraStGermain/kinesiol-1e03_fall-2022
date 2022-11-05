@@ -1,8 +1,8 @@
 ---
 title: "Feedback: Scheduling techniques"
 subtitle: "KINESIOL 1E03 - Motor control and learning"
-author: "Brad McKay"
-date: "Fall 2021 Week 10 </br> Lecture 21"
+author: "Laura St. Germain"
+date: "Fall 2022 Week 8 </br> Lecture 16"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -1008,8 +1008,10 @@ background-position: 9% 15%
 
 # What questions do you have?
 
+![:scale 30%](imgs/questions.png)
+
 |                                                                                                                |                                   |
 | :------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                       | www.cartermaclab.org                        |
-| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                          | @bradmckay8                         |
-| <a href="https://github.com/cartermaclab">.mackinred[<i class="fa fa-github fa-fw"></i>]                              | @MotorMeta                           |
+| <a href="https://twitter.com/cartermaclab">.mackinred[<i class="fa fa-twitter fa-fw"></i>]                     | @_LauraStGermain                  |
+| <a href="https://github.com/LauraStGermain">.mackinred[<i class="fa fa-github fa-fw"></i>]                     | @LauraStGermain                   |
+| <a href="https://cartermaclab.org">.mackinred[<i class="fa fa-link fa-fw"></i>]                                | www.cartermaclab.org              |
