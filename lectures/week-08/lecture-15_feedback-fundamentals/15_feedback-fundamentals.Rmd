@@ -445,7 +445,7 @@ kbl(kr_kp_table,
 
 - Secondary or a **by-product** of informational role
 
-- Emphasized in the **"OPTIMAL"** theory<sup>3</sup>
+- Emphasized in the **"OPTIMAL"** theory<sup>2</sup>
   - Practice context can put learners into a **virtuous** or a **vicious** cycle
 ]
 
