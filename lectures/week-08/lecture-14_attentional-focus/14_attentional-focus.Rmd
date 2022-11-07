@@ -350,7 +350,6 @@ ggplot2::ggplot(wulf_balance, aes(x = trials, y = rmse, group = group)) +
 .black[Groups]:
 - **Internal** focus = arm swing
 - **External** focus = club swing
-- **Control** = no instructions given
 ]
 
 --
