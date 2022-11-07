@@ -727,6 +727,15 @@ ggplot2::ggplot(guadagnoli_ee, aes(x = estimation, y = error, fill = estimation)
 
 ---
 
+## Pause, reflect
+
+Describe a situation where:  
+    a) 100% feedback is detrimental to learning  
+    b) 100% feedback is beneficial to learning
+
+
+---
+
 # Learning objectives
 
 1. Identify and describe scheduling techniques based on the **content** of the feedback.
