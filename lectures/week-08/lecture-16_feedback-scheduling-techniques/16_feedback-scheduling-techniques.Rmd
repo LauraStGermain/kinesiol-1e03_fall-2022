@@ -696,7 +696,7 @@ This resulted in **four** experimental groups
 ```{r echo=FALSE}
 guadagnoli_ee <- tibble::tibble(
     feedback = c(rep("100% feedback", 2), rep("20% feedback", 2)),
-    estimation = c("Estimation", "No estimation", "Estimation", "No estimation"),
+    estimation = c("100% Estimation", "20% Estimation", "100% Estimation", "20% Estimation"),
     error = c(240.23, 353.12, 290.81, 285.95)
 )
 ```
@@ -724,15 +724,6 @@ ggplot2::ggplot(guadagnoli_ee, aes(x = estimation, y = error, fill = estimation)
   )
 ```
 ]
-
----
-
-## Pause, reflect
-
-Describe a situation where:  
-    a) 100% feedback is detrimental to learning  
-    b) 100% feedback is beneficial to learning
-
 
 ---
 
